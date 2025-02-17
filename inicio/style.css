@@ -1,0 +1,398 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Raleway", serif;
+}
+
+/* Banner */
+
+.flex{
+    display: flex;
+}
+
+.banner-img{
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    cursor: pointer;
+}
+.banner-top{
+    justify-content: end;
+    gap: 2rem;
+    height: 40px;
+    align-items: center;
+    background-color: #000000b8;
+}
+.contacto-up ul{
+    gap: 1rem;
+    align-items: center;
+}
+.contacto-up ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: white;
+}
+.redes-up{
+    background-color: #575252c4;
+    padding: 3px 10px;
+    margin: 0 35px 0 0;
+}
+.redes-up .bx{
+    font-size: 20px;
+}
+.redes-up ul{
+    gap: 0.3rem;
+}
+
+/* header */
+
+header{
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    align-items: center;
+}
+.header-left{
+    justify-content: end;
+    gap: 3rem;
+    align-items: center;
+}
+.lista-header ul{
+    gap: 2rem;
+}
+.lista-header ul li a{
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.line{
+    position: relative;
+ }
+.line:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -7px;
+    right: 100%;
+    transition: all .4s;
+    will-change: width;
+}
+.line:hover:after{
+    width: 100%;
+    right: 0;
+}
+
+.boton button{
+    border: none;
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 10px 10px;
+    color: white;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.boton button:hover{
+    font-weight: 600;
+}
+
+.logo-img img{
+    padding: 0 0 0 4rem;
+}
+
+/* Banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 0 3rem 8rem;
+    gap: 15px;
+    cursor: context-menu;
+}
+
+.banner .welcome-benner p{
+    background-color: #575252;
+    padding: 7px 8px;
+    width: 17rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner .title-banner{
+    font-size: 55px;
+    color: black;
+    font-weight: 600;
+}
+.title-banner p{
+    text-transform: capitalize;
+}
+.banner .text-banner{
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.text-banner p, .button-banner button{
+    font-weight: 600;
+}
+.portafolio{
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 20px;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+}
+.portafolio .bx-right-arrow-alt{
+    display: flex;
+    transition: 0.8s;
+}
+
+.button-banner{
+    padding: 0 3px;
+    display: flex;
+    gap: 1rem;
+}
+.servicio{
+    background-color: black;
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    width: 9rem;
+}
+.button-banner button{
+    cursor: pointer;
+}
+
+/* Contato black */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 75px;
+}
+
+.contact p{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contact button{
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* Album */
+.title-album{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    margin: 4rem 0;
+}
+
+.title-album .first-title{
+    width: 40%;
+    font-weight: 600;
+    font-size: 30px;
+}
+.title-album .second-title{
+    width: 50%;
+    font-size: 22px;
+    text-align: center;
+}
+
+.album .img-album{
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+}
+.img-album .img-unid{
+    width: 230px;
+    height: 477px;
+    overflow: hidden;
+}
+.img-album .img-unid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-unid:hover img{
+    transform: scale(1.5);
+}
+
+.img-right{
+    object-position: 100% 5%;
+}
+
+/* Nosotros */
+
+.nosotros{
+    margin: 4rem 0;
+    padding: 1rem 0 3rem 0;
+    background-color: #F0F0F0;
+}
+
+.nosotros .title-nosotros h1, .service .title-service h1{
+    text-align: center;
+    font-weight: 500;
+    margin: 3rem 0;
+    font-family: "Raleway", serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.inf-nosotros{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.img-video-nosotros{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.img-video-nosotros img{
+    width: 306px;
+    height: 512px;
+    object-fit: cover;
+}
+.img-video-nosotros video{
+    width: 306px;
+    height: 470px;
+    object-fit: cover;
+}
+.paraph-nosotros{
+    width: 40%;
+}
+.paraph-nosotros p{
+    margin: 10px 0;
+}
+.paraph-nosotros p:nth-child(1){
+    font-size: 18px;
+    font-weight: 600
+}
+.paraph-nosotros p:nth-child(2){
+    font-size: 32px;
+    width: 80%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.paraph-nosotros p:nth-child(3){
+    width: 80%;
+    font-size: 20px;
+    font-weight: 300
+}
+
+/* servicios */
+
+.inf-service{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 10px;
+}
+
+.img-service{
+    width: 700px;
+    height: 380px;
+    border: 1px  solid black;
+    background-image: url(../img/service1.png);
+    background-size: 73% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.img-service-2{
+    width: 700px;
+    height: 380px;
+    border: 1px  solid black;
+    background-image: url(../img/service2.png);
+    background-size: 60% 100%;
+    background-attachment: fixed;
+}
+.img-service-3{
+    width: 700px;
+    height: 380px;
+    border: 1px  solid black;
+    background-image: url(../img/service3.png);
+    background-size: 60% 100%;
+    background-attachment: fixed;
+}
+
+.text-service{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 400px;
+    text-align: center;
+    height: 380px;
+}
+
+.text-service h1, .text-service p, .text-service button{
+    padding: 10px 0;
+}
+
+.text-service h1{
+    font-weight: 300;
+}
+
+.button-service button{
+    background-color: black;
+    color: white;
+    padding: 10px 27px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.flex-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Proyectos */
+
+.projects .title-projects h1{
+    font-weight: 500;
+    margin: 3rem 0;
+    font-family: "Raleway", serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 5rem;
+}
