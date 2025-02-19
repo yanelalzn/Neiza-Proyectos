@@ -425,7 +425,7 @@ header{
 /* Galeria */
 
 .list-projects .filer-item.active{
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid green;
 }
 
 .galeria-img{
