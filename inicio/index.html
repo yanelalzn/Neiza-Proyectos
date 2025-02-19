@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../js/javascript.js" defer></script>
     <title>Neiza Proyectos</title>
 </head>
 <body>
@@ -45,9 +46,9 @@
                     <div class="lista-header">
                         <ul class="flex">
                             <li class="line"><a href="">Inicio</a></li>
-                            <li class="line"><a href="">Nosotros</a></li>
-                            <li class="line"><a href="">Servicios</a></li>
-                            <li class="line"><a href="">Contacto</a></li>
+                            <li class="line"><a href="#nosotros">Nosotros</a></li>
+                            <li class="line"><a href="#servicios">Servicios</a></li>
+                            <li class="line"><a href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="boton">
@@ -101,7 +102,7 @@
         </div>
     </div>
 
-    <div class="nosotros">
+    <div class="nosotros" id="nosotros">
         <div class="title-nosotros">
             <h1>Nosotros</h1>
         </div>
@@ -129,7 +130,7 @@
             </div>
         </div>
     </div>
-    <div class="service">
+    <div class="service" id="servicios">
         <div class="title-service">
             <h1>Servicios</h1>
         </div>
@@ -183,42 +184,46 @@
         <div class="galeria">
             <div class="list-projects">
                 <ul>
-                    <li>Comercial Retail</li>
+                    <li class="filer-item active" data-filer="all">Comercial Retail</li>
                     <li>/</li>
-                    <li>Residencial</li>
+                    <li class="filer-item" data-filer="uno">Residencial</li>
                     <li>/</li>
-                    <li>Corporativo</li>
+                    <li class="filer-item" data-filer="dos">Corporativo</li>
                     <li>/</li>
-                    <li>Inmobiliario</li>
+                    <li class="filer-item" data-filer="tres">Inmobiliario</li>
                 </ul>
             </div>
             <div class="galeria-img">
-                <div class="galeria-card">
-                    <img src="" alt="">
+                <div class="galeria-card uno">
+                    <img src="../img/album1.jpg" alt="">
+                    <div class="overlay"></div>
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
                         <i class='bx bx-plus'></i>
                     </div>
                 </div>
-                <div class="galeria-card">
-                    <img src="" alt="">
+                <div class="galeria-card dos">
+                    <img src="../img/album2.png" alt="">
+                    <div class="overlay"></div>
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
                         <i class='bx bx-plus'></i>
                     </div>
                 </div>
-                <div class="galeria-card">
-                    <img src="" alt="">
+                <div class="galeria-card tres">
+                    <img src="../img/album3.png" alt="">
+                    <div class="overlay"></div>
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
                         <i class='bx bx-plus'></i>
                     </div>
                 </div>
-                <div class="galeria-card">
-                    <img src="" alt="">
+                <div class="galeria-card tres">
+                    <img src="../img/album4.jpg" alt="">
+                    <div class="overlay"></div>
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
@@ -228,11 +233,11 @@
             </div>
         </div>
     </div>
-    <div class="contacto">
+    <div class="contacto" id="contacto">
         <div class="form">
             <h1>Envíanos un Mensaje</h1>
             <p class="paraph-contact">¡Te asesoramos sin compromiso! <br> Nos ponemos
-                en contacto en breve.!</p>
+                en contacto en breve.</p>
                 <form action="formulario.php" method="post">
                     <div class="name">
                         <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
@@ -259,5 +264,48 @@
                 <img src="../img/nosotros.png" alt="">
         </div>
     </div>
+
+    <footer>
+        <div class="footer-up">
+            <div class="logo-footer">
+                <img src="../img/logo-footer.png" alt="">
+                <p> Zanei Proyectos es una empresa integrada por profesionales 
+                    especializados en Arquitectura, Diseño y Web</p>
+                <ul>
+                    <li><i class='bx bxl-facebook' style='color:#ffffff'></i></li>
+                    <li><i class='bx bxl-instagram' style='color:#ffffff'></i></li>
+                    <li><i class='bx bxl-linkedin' style='color:#ffffff' ></i></li>
+                </ul>
+            </div>
+            <div class="list-footer flex">
+                <div class="list-menu-footer">
+                    <p>Servicios</p>
+                    <ul>
+                        <li>Estrategia y diseño de espacios</li>
+                        <li>Arquitectura e ingeniería</li>
+                        <li>Construcción y equipamiento</li>
+                    </ul>
+                </div>
+                <div class="list-menu-footer">
+                    <p>Proyectos</p>
+                    <ul>
+                        <li>Tiendas y locales comerciales</li>
+                        <li>Oficinas y despachos</li>
+                        <li>Hoteles y restaurantes</li>
+                        <li>Clínicas y centros sociosanitarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p>2025 © Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+
+    <section class="whatsapp-container">
+        <a href="https://wa.me/51914926263?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
+            <img class="icono-whatsapp" src="../img/whatsApps.png" alt=""></a>
+    </section>
 </body>
 </html>
