@@ -9,6 +9,11 @@
     font-family: "Raleway", serif;
 }
 
+a{
+    color: white;
+}
+
+
 /* Banner */
 
 .flex{
@@ -55,6 +60,10 @@
 /* header */
 
 header{
+    position: fixed;
+    z-index: 10000;
+    top: auto;
+    width: 100%;
     justify-content: space-between;
     padding: 1rem 4rem;
     align-items: center;
@@ -118,7 +127,7 @@ header{
     flex-direction: column;
     justify-content: center;
     height: 80vh;
-    padding: 0 0 3rem 8rem;
+    padding: 8rem 0 0 8rem;
     gap: 15px;
     cursor: context-menu;
 }
@@ -158,9 +167,10 @@ header{
     display: flex;
     align-items: center;
 }
-.portafolio .bx-right-arrow-alt{
+.portafolio a{
     display: flex;
     transition: 0.8s;
+    color: black;
 }
 
 .button-banner{
@@ -178,6 +188,13 @@ header{
 }
 .button-banner button{
     cursor: pointer;
+}
+.button-banner button{
+    transition: 0.3s;
+}
+
+.button-banner button:hover{
+    transform: scale(1.03);
 }
 
 /* Contato black */
@@ -284,7 +301,7 @@ header{
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 40%;
+    width: 50%;
 }
 .img-video-nosotros img{
     width: 306px;
@@ -336,7 +353,7 @@ header{
     height: 380px;
     border: 1px  solid black;
     background-image: url(../img/service1.png);
-    background-size: 73% 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
@@ -346,7 +363,7 @@ header{
     height: 380px;
     border: 1px  solid black;
     background-image: url(../img/service2.png);
-    background-size: 60% 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
 .img-service-3{
@@ -354,7 +371,7 @@ header{
     height: 380px;
     border: 1px  solid black;
     background-image: url(../img/service3.png);
-    background-size: 63% 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
 
@@ -368,13 +385,39 @@ header{
     text-align: center;
     height: 380px;
 }
+.text-service label{
+    cursor: pointer;
+}
+.text-service Label:hover i{
+    font-weight: 600;
+}
+.text-service Label:hover{
+    font-weight: 600;
+}
 
-.text-service h1, .text-service p, .text-service button{
+.text-service label, .text-service button{
     padding: 10px 0;
 }
 
 .text-service h1{
     font-weight: 300;
+}
+
+.text-service .inf-service-down{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+input[type='checkbox']:checked ~ .inf-service-down{
+    max-height: 600px;
+    padding: 0 5px 10px 5px;
+}
+.inf-service-down p{
+    text-transform: capitalize;
+    padding: 0 5px 10px 5px;
+}
+input[type='checkbox']{
+    display: none;
 }
 
 .button-service button{
@@ -385,8 +428,11 @@ header{
     border: none;
     border-radius: 20px;
     text-transform: uppercase;
+    transition: 0.8s;
 }
-
+.button-service button:hover{
+    transform: scale(1.05);
+}
 .flex-reverse{
     display: flex;
     flex-direction: row-reverse;
@@ -413,19 +459,40 @@ header{
     padding-left: 4.5rem;
 }
 .list-projects ul li{
-    padding: 0 10px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.8s;
 }
-.list-projects ul li:nth-child(odd):hover{
-    text-decoration: 2px underline;
+
+.list-projects ul li:nth-child(even){
+    padding: 0 10px;
 }
+
+/* .list-projects ul li:nth-child(odd):hover{
+    text-decoration: 2px underline;
+} */
 
 /* Galeria */
 
-.list-projects .filer-item.active{
+.list-projects .filter-item.active{
     border-bottom: 1px solid green;
+}
+
+.galeria-card.hide{
+    display: none;
+}
+
+.galeria-card.show{
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .galeria-img{
@@ -434,18 +501,25 @@ header{
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 8rem;
 }
 .galeria-card{
     width: 350px;
     height: 350px;
     display: block;
     position: relative;
+    overflow: hidden;
+
 }
 .galeria-card img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;}
+
+.galeria-card:hover img{
+    transform: scale(1.5);
 }
+
 .galeria-card .overlay{
     background-color: #ffffffbd;
     backdrop-filter: blur(15px);
@@ -472,7 +546,6 @@ header{
     left: 50%;
     transform: translate(-50%, 50%);
     opacity: 0;
-    pointer-events: none;
     transition: all .6s ease-in-out;
 }
 
@@ -480,7 +553,12 @@ header{
     opacity: 1;
     /* pointer-events: unset; */
 }
-
+.card-inf a i{
+    transition: 0.8s;
+}
+.card-inf a i:hover{
+    color: black;
+}
 .galeria-card:hover .overlay{
     opacity: 1;
 }
@@ -529,7 +607,7 @@ header{
 }
 
 .form{
-    width: 30%;
+    width: 38%;
     border: 2px solid black;
     border-radius: 25px;
     padding: 20px 30px;
@@ -539,7 +617,7 @@ header{
 .contact-img{
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 38%;
 }
 .contact-img img{
     width: 280px;
@@ -559,7 +637,6 @@ header{
 }
 
 /* form */
-
 
 .contacto h1{
     color: black;
@@ -735,7 +812,7 @@ footer{
 }
 
 .footer-down{
-    padding: 2rem 9rem;
+    padding: 2rem 3rem;
     border-top: 2px solid white;
 }
 
@@ -765,4 +842,48 @@ footer{
     padding: 6px;
     font-size: 20px;
     transition: 0.8s;
+}
+
+
+/* scroll */
+
+
+@keyframes show{
+    from {
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+    }
+    to {
+        opacity: 1;
+        transform: none;  
+    }
+}
+
+.album .img-album, .paraph-nosotros, .galeria-img{
+        view-timeline-name: --image;
+        /* view-timeline-axis: block; */
+        animation-timeline: --image;
+        animation-name: show;
+        animation-range: entry 25% cover 30%; 
+        animation-fill-mode: both;
+}
+
+@keyframes left{
+    from {
+        opacity: 0;
+        transform: translate3d(-100%,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: none;  
+    }
+}
+
+.img-video-nosotros{
+        view-timeline-name: --image;
+        /* view-timeline-axis: block; */
+        animation-timeline: --image;
+        animation-name: left;
+        animation-range: entry 25% cover 30%; 
+        animation-fill-mode: both;
 }

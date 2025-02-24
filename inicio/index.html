@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../js/javascript.js" defer></script>
+    <script src="../js/main.js" defer></script>
     <title>Neiza Proyectos</title>
 </head>
 <body>
@@ -38,9 +39,9 @@
                     </ul>
                 </div>
             </div>
-            <header class="flex">
+            <header class="flex" id="Header">
                 <div class="logo-img">
-                    <img src="../img/logo.png" alt="">
+                    <a href="index.html"><img src="../img/logo.png" alt=""></a>
                 </div>
                 <div class="header-left flex">
                     <div class="lista-header">
@@ -62,16 +63,16 @@
             <div class="title-banner"><p>Transformamos espacios, <br> creamos futuros.</p></div>
             <div class="text-banner"><p>¡A comenzar una aventura!</p></div>
             <div class="button-banner">
-                <button class="portafolio">Portafolio
-                    <i class='bx bx-right-arrow-alt bx-fade-right bx-flip-vertical' ></i>
+                <button class="portafolio">
+                    <a href="../portafolio/index.html">Portafolio<i class='bx bx-right-arrow-alt bx-fade-right bx-flip-vertical' ></i></a>
                 </button>
-                <button class="servicio">Servicios</button>
+                <button class="servicio"><a href="../servicios/index.html">Servicios</a> </button>
             </div>
         </div>
     </div>
     <div class="contact">
         <p>Obten su consulta y estimacón gratuita para su proyecto</p>
-        <button>Contactanos</button>
+        <a href="#contacto"><button>Contactanos</button></a>
     </div>
     <div class="album">
         <div class="title-album">
@@ -139,12 +140,19 @@
             </div>
             <div class="text-service">
                 <h1>remodelación</h1>
-                <p>
+                <input type="checkbox" id="primera">
+                <label for="primera">
                     <i class='bx bx-plus'></i>
                     INFO
-                </p>
+                </label>
+                <div class="inf-service-down">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Enim, repellat temporibus! Odio reiciendis cum
+                        quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
+                        inventore eius fugit quaerat debitis officiis nihil.</p>
+                </div>
                 <div class="button-service">
-                    <button>Cotizar</button>
+                    <button> <a href="../servicios/index.html">Ver más</a></button>
                 </div>
             </div>
         </div>
@@ -153,12 +161,19 @@
             </div>
             <div class="text-service">
                 <h1>remodelación</h1>
-                <p>
+                <input type="checkbox" id="segunda">
+                <label for="segunda">
                     <i class='bx bx-plus'></i>
                     INFO
-                </p>
+                </label>
+                <div class="inf-service-down">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Enim, repellat temporibus! Odio reiciendis cum
+                        quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
+                        inventore eius fugit quaerat debitis officiis nihil.</p>
+                </div>
                 <div class="button-service">
-                    <button>Cotizar</button>
+                    <button> <a href="../servicios/index.html">Ver más</a></button>
                 </div>
             </div>
         </div>
@@ -167,12 +182,19 @@
             </div>
             <div class="text-service">
                 <h1>remodelación</h1>
-                <p>
+                <input type="checkbox" id="tercera">
+                <label for="tercera">
                     <i class='bx bx-plus'></i>
                     INFO
-                </p>
+                </label>
+                <div class="inf-service-down">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Enim, repellat temporibus! Odio reiciendis cum
+                        quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
+                        inventore eius fugit quaerat debitis officiis nihil.</p>
+                </div>
                 <div class="button-service">
-                    <button>Cotizar</button>
+                    <button> <a href="../servicios/index.html">Ver más</a></button>
                 </div>
             </div>
         </div>
@@ -184,13 +206,13 @@
         <div class="galeria">
             <div class="list-projects">
                 <ul>
-                    <li class="filer-item active" data-filer="all">Comercial Retail</li>
+                    <li class="filter-item active" data-filter="all">Comercial Retail</li>
                     <li>/</li>
-                    <li class="filer-item" data-filer="uno">Residencial</li>
+                    <li class="filter-item" data-filter="uno">Residencial</li>
                     <li>/</li>
-                    <li class="filer-item" data-filer="dos">Corporativo</li>
+                    <li class="filter-item" data-filter="dos">Corporativo</li>
                     <li>/</li>
-                    <li class="filer-item" data-filer="tres">Inmobiliario</li>
+                    <li class="filter-item" data-filter="tres">Inmobiliario</li>
                 </ul>
             </div>
             <div class="galeria-img">
@@ -200,7 +222,7 @@
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
-                        <i class='bx bx-plus'></i>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
                 <div class="galeria-card dos">
@@ -209,7 +231,7 @@
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
-                        <i class='bx bx-plus'></i>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
                 <div class="galeria-card tres">
@@ -218,7 +240,7 @@
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
-                        <i class='bx bx-plus'></i>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
                 <div class="galeria-card tres">
@@ -227,7 +249,7 @@
                     <div class="card-inf">
                         <button>Departamento Perez</button>
                         <p>Diseño Interior</p>
-                        <i class='bx bx-plus'></i>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
             </div>
