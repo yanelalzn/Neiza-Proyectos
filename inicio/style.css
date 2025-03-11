@@ -47,7 +47,7 @@ a{
 }
 .redes-up{
     background-color: #575252c4;
-    padding: 3px 10px;
+    padding: 8px 10px;
     margin: 0 35px 0 0;
 }
 .redes-up .bx{
@@ -119,6 +119,21 @@ header{
 
 .logo-img img{
     padding: 0 0 0 4rem;
+}
+
+/* Menu */
+
+header label{
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+#menu{
+    display: none;
+}
+#menu:checked ~ .header-left .lista-header{
+    display: initial;
 }
 
 /* Banner */
@@ -385,6 +400,10 @@ header{
     text-align: center;
     height: 380px;
 }
+
+.text-service input{
+    display: none;
+}
 .text-service label{
     cursor: pointer;
 }
@@ -416,9 +435,9 @@ input[type='checkbox']:checked ~ .inf-service-down{
     text-transform: capitalize;
     padding: 0 5px 10px 5px;
 }
-input[type='checkbox']{
+/* input[type='checkbox']{
     display: none;
-}
+} */
 
 .button-service button{
     background-color: black;
@@ -886,4 +905,229 @@ footer{
         animation-name: left;
         animation-range: entry 25% cover 30%; 
         animation-fill-mode: both;
+}
+
+
+
+
+/* responsive */
+
+@media(max-width:991px){
+
+    /* header */
+    
+    .banner-top, .boton button{
+        display: none;
+    }
+    header{
+        padding: 1rem 2rem;
+        padding: 0 1rem !important;
+    }
+    .logo-img img{
+        padding: 0;
+    }
+    header label{
+        display: block;
+    }
+
+    .lista-header{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: none;
+    }
+    .lista-header ul {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+    }
+    
+
+    /* banner */
+    
+    .banner{
+        padding: 8rem 0 0 0.5rem;
+        align-items: center;
+    }
+    .title-banner p{
+        text-align: center;
+    }
+    .banner-img{
+        height: 80vh;
+    }
+    .banner .title-banner{
+        font-size: 50px;
+    }
+
+    /* Contacto */
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+        padding: 15px 0;
+    }
+    .contact p{
+        text-align: center;
+    }
+    .title-album{
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 15px;
+    }
+    .title-album .first-title, .title-album .second-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* img album */
+    .album .img-album{
+        flex-wrap: wrap;
+    }
+    .img-unid{
+        width: 80% !important;
+    }
+
+    /* Nosotros */
+
+    .inf-nosotros{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .paraph-nosotros, .img-video-nosotros{
+        width: 90%;
+    }
+    .paraph-nosotros p{
+        text-align: center;
+        width: 100% !important;
+    }
+    .img-video-nosotros img{
+        width: 200px;
+        height: 352px;
+    }
+    .img-video-nosotros video{
+        width: 200px;
+        height: 310px;
+    }
+    .img-video-nosotros{
+        justify-content: center;
+    }
+    
+    /* servicios */
+    .inf-service{
+        flex-direction: column;
+    }
+    .img-service, .img-service-2, .img-service-3 {
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    .text-service{
+        width: 100%;
+    }
+
+    /* proyectos */
+    .list-projects ul{
+        padding-left: 20px;
+    }
+    .list-projects ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .list-projects{
+        margin: 2rem 0;
+    }
+
+    /* Contacto */
+
+    .contacto{
+        flex-direction: column;
+    }
+    .form, .contact-img{
+        width: 93%;
+    }
+    .contact-img img{
+        width: 50%;
+        height: 352px;
+    }
+    .contact-img video{
+        width: 50%;
+        height: 310px;
+    }
+
+    /* footer */
+    
+    .footer-up{
+        flex-direction: column;
+    }
+    .footer-down{
+        padding: 2rem 0;
+    }
+    .list-footer{
+        width: 100%;
+    }
+    .footer-down p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* header */
+
+    header{
+        padding: 0px 2rem !important;
+    }
+    .banner-img{ 
+        height: 60vh;
+    }
+
+    .banner{
+        height: 50vh;
+        padding: 8rem 0 0 6rem;
+    }
+    .paraph-nosotros p:nth-child(3), .paraph-nosotros p:nth-child(2){
+        width: 100%;
+    }
+    .inf-nosotros{
+        gap: 2rem;
+    }
+    .img-video-nosotros img{
+        width: 250px;
+        height: 410px;
+    }
+    .img-video-nosotros video{
+        width: 250px;
+        height: 440px;
+    }
+
+
+    /* contacto */
+    .contacto{
+        gap: 2rem;
+    }
+
+    .contact-img video {
+        width: 230px;
+        height: 420px;
+    }
+    .contact-img img {
+        width: 230px;
+        height: 460px;
+    }
+
+    /* form */
+
+    .form, .contact-img {
+        width: 45%;
+    }
+
+    /* footer */
+    
+    .list-footer {
+        width: 70%;
+    }
+
 }

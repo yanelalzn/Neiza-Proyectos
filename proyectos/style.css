@@ -132,6 +132,21 @@ header{
     padding: 0 0 0 4rem;
 }
 
+/* Menu */
+
+header label{
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+#menu{
+    display: none;
+}
+#menu:checked ~ .header-left .lista-header{
+    display: initial;
+}
+
 /* Banner */
 .banner{
     display: flex;
@@ -454,4 +469,120 @@ footer{
     transition: 0.8s;
 }
 
+@media(max-width:991px){
+    /* header */
+ 
+.banner-top, .boton button{
+    display: none;
+}
+ header{
+     padding: 1rem 2rem;
+     padding: 0 1rem !important;
+ }
+ .logo-img img{
+     padding: 0;
+ }
 
+ header label{
+    display: block;
+}
+   .lista-header{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: none;
+}
+.lista-header ul {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+    /* banner */
+ 
+    .banner{
+     padding: 8rem 0 0 0.5rem;
+     align-items: center;
+ }
+ .title-banner p{
+     text-align: center;
+ }
+ .banner-img{
+     height: 60vh;
+ }
+ .title-banner p{
+    font-size: 60px;
+ }
+
+ /* album */
+
+ .list-projects ul {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ /* servicios */
+
+ .diseño-comercial p{
+     text-align: center;
+ }
+
+ .diseño-comercial, .recidencial, .servicio-cat{
+     height: 55vh;
+ }
+ .img-service{
+     width: 100%;
+ }
+ .galeria-img{
+     flex-direction: column;
+ }
+ .servicio-cat p, .recidencial p, .diseño-comercial p{
+     font-size: 50px;
+ }
+
+ /* footer */
+
+ .footer-up{
+     flex-direction: column;
+     gap: 1rem;
+ }
+ .list-footer{
+     width: 100%;
+ }
+
+ .footer-down {
+     padding: 2rem 0;
+ }
+
+ .footer-down p{
+     text-align: center;
+ }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* header */
+
+    header{
+        padding: 0px 2rem !important;
+    }
+    .banner-img{ 
+        height: 40vh;
+    }
+    .banner{
+        height: 35vh;
+    }
+    .diseño-comercial, .recidencial, .servicio-cat{
+        height: 40vh;
+    }
+    .img-service{
+        width: 600px;
+    }
+     /* footer */
+    
+     .list-footer {
+        width: 70%;
+    }
+}
