@@ -713,22 +713,18 @@ input[type='checkbox']:checked ~ .inf-service-down{
 .input-large input{
     border-radius: 22px;
     border: none;
-    border-style: solid;
     background-color: #e1e1e1;
     width: 98%;
     padding: 0.8rem;
-    color: white !important;
 }
 
 .contacto textarea{
     height: 150px;
     border: none;
     border-radius: 22px;
-    border-style: solid;
     background-color: #e1e1e1;
     width: 98%;
     padding: 0.8rem;
-    color: white !important;
 }
 
 .input-large {
@@ -1071,6 +1067,17 @@ footer{
     .footer-down p{
         text-align: center;
     }
+
+    .logo-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .logo-footer p{
+        width: 82%;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 991px) and (max-width: 1300px){
@@ -1128,6 +1135,18 @@ footer{
     
     .list-footer {
         width: 70%;
+    }
+
+    .logo-footer{
+        text-align: center;
+    }
+
+    .logo-footer p {
+        width: 100%;
+        text-align: center;
+    }
+    .logo-footer ul{
+        justify-content: center;
     }
 
 }
