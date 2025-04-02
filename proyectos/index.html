@@ -12,33 +12,6 @@
 <body>
     <div class="banner-img" id="up">
         <nav>
-            <div class="banner-top flex">
-                <div class="contacto-up">
-                        <ul class="flex">
-                            <li>
-                                <i class='bx bxs-envelope' style='color:#77a9b4'></i>
-                                proyectosdearquitectura@neiza.com.pe
-                            </li>
-                            <li>
-                                <i class='bx bxs-phone' style='color:#77a9b4'></i>
-                                +05 958 873 698
-                            </li>
-                        </ul>
-                </div>
-                <div class="redes-up">
-                    <ul class="flex">
-                        <li>
-                            <i class='bx bxl-facebook-square' style='color:#ffffff'  ></i>
-                        </li>
-                        <li>
-                            <i class='bx bxl-instagram-alt' style='color:#ffffff' ></i>
-                        </li>
-                        <li>
-                            <i class='bx bxl-linkedin-square' style='color:#ffffff' ></i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <header class="flex" id="Header">
                 <div class="logo-img">
                     <a href="../inicio/index.html"><img src="../img/logo.png" alt=""></a>
@@ -48,9 +21,9 @@
                     <div class="lista-header">
                         <ul class="flex">
                             <li class="line"><a href="../inicio/index.html">Inicio</a></li>
-                            <li class="line"><a href="#nosotros">Nosotros</a></li>
-                            <li class="line"><a href="../servicios/index.html">Servicios</a></li>
-                            <li class="service-line"><a>Proyectos</a></li>
+                            <li class="line"><a href="../nosotros/index.html">Nosotros</a></li>
+                            <li class="service-line"><a href="../proyectos/index.html">Proyectos</a></li>
+                            <li class="line"><a href="../contacto/index.html">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="boton">
@@ -67,230 +40,92 @@
         </nav>
         
     </div>
-    <div class="servicios">
+    
+
+    <div class="projects">
         <div class="galeria">
             <div class="list-projects">
                 <ul>
-                    <li><a href="#service1">Diseño Comercial</a></li>
+                    <li class="filter-item active" data-filter="all">Comercial Retail</li>
                     <li>/</li>
-                    <li><a href="#service2">Residencial</a></li>
+                    <li class="filter-item" data-filter="uno">Residencial</li>
                     <li>/</li>
-                    <li><a href="#service3">Corporativo</a></li>
+                    <li class="filter-item" data-filter="dos">Corporativo</li>
                     <li>/</li>
-                    <li><a href="#service1">Inmobiliario</a></li>
+                    <li class="filter-item" data-filter="tres">Inmobiliario</li>
                 </ul>
             </div>
-            <div class="diseño-comercial" id="service1">
-                <div>
-                    <p>Diseño Comercial</p>
-                </div>
-            </div>
             <div class="galeria-img">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>Casa del Moral</h1>
-                    <input type="checkbox" id="primero">
-                    <label for="primero">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>
-                          <b>Cliente:</b> Desarrolladora del pacífico S.A.C.
-                          <br>
-                          <b>Fecha de Inicio:</b> 28/01/2019
-                          <br>
-                          <b>fecha de Termino de Obra:</b> 28/03/2019
-                          <br>
-                          <b>Ubicación:</b> Surquillo-Lima
-                          <br>
-                          <b>Alcance:</b> 
-                          <br>
-                          Contrato colaborativo con una impresionante estrategia 
-                          para mantener un precio fijo durante 32 meses a pesar del alza de costos.
-                        </p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card uno">
+                    <img src="../img/album1.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="corporativo.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="galeria-img flex-reverse">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="segundo">
-                    <label for="segundo">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card dos">
+                    <img src="../img/album2.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="galeria-img">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="tercero">
-                    <label for="tercero">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card tres">
+                    <img src="../img/album3.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="recidencial" id="service2">
-                <div>
-                    <p>Residencial</p>
-                </div>
-            </div>
-            <div class="galeria-img">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="cuarto">
-                    <label for="cuarto">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card tres">
+                    <img src="../img/album4.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="galeria-img flex-reverse">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="quinto">
-                    <label for="quinto">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card uno">
+                    <img src="../img/album1.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="galeria-img">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="sexto">
-                    <label for="sexto">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card dos">
+                    <img src="../img/album2.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="servicio-cat" id="service3">
-                <div>
-                    <p>Corporativo</p>
-                </div>
-            </div>
-            <div class="galeria-img">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="setimo">
-                    <label for="setimo">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card tres">
+                    <img src="../img/album3.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="galeria-img flex-reverse">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="noveno">
-                    <label for="noveno">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
-                    </div>
-                </div>
-            </div>
-            <div class="galeria-img">
-                <div class="img-service">
-                </div>
-                <div class="text-service">
-                    <h1>remodelación</h1>
-                    <input type="checkbox" id="decimo">
-                    <label for="decimo">
-                        <i class='bx bx-plus'></i>
-                        INFO
-                    </label>
-                    <div class="inf-service-down">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Enim, repellat temporibus! Odio reiciendis cum
-                            quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                            inventore eius fugit quaerat debitis officiis nihil.</p>
-                    </div>
-                    <div class="button-galeria">
-                        <button>Galeria</button>
+                <div class="galeria-card tres">
+                    <img src="../img/album4.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="card-inf">
+                        <button>Departamento Perez</button>
+                        <p>Diseño Interior</p>
+                        <a href="../proyectos/index.html"><i class='bx bx-plus'></i></a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../js/javascript.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="banner-img" id="up">
+        <nav>
+            <header class="flex" id="Header">
+                <div class="logo-img">
+                    <a href="../inicio/index.html"><img src="../img/logo.png" alt=""></a>
+                </div>
+                <input type="checkbox" id="menu" />
+                <div class="header-left flex">
+                    <div class="lista-header">
+                        <ul class="flex">
+                            <li class="line"><a href="../inicio/index.html">Inicio</a></li>
+                            <li class="line"><a href="../nosotros/index.html">Nosotros</a></li>
+                            <li class="line"><a href="../proyectos/index.html">Proyectos</a></li>
+                            <li class="line"><a href="../contacto/index.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="boton">
+                        <button>Contactanos</button>
+                    </div>
+                </div>
+                <label for="menu">
+                    <img src="../img/menu.png" alt="" class="menu-icono">
+                </label>
+            </header>
+            <div class="banner">
+                <div class="title-banner"><p>Contacto</div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="contacto" id="contacto">
+        <div class="form">
+            <h1>Envíanos un Mensaje</h1>
+            <p class="paraph-contact">¡Te asesoramos sin compromiso! <br> Nos ponemos
+                en contacto en breve.</p>
+                <form action="formulario.php" method="post">
+                    <div class="name">
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </div>
+                    <div class="name">
+                        <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
+                    </div>
+                    <div class="input-large">
+                        <input type="number" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono"> 
+                    </div>
+                    <div class="input-large">
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </div>
+                    <div class="input-large">
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                    </div>
+                    <button class="btn-form" type="submit" name="enviar_formulario" id="enviar">Enviar</button>         
+                </form>
+        </div>
+        <div class="contact-img">
+            <div class="icon-contacto">
+                <p class="icon-contacto-p1">Contacto</p>
+                <h2 style="margin: 10px 0;">Cotiza tu proyecto</h2>
+                <p class="icon-contacto-p2">Llame o envíe un formulario de contacto, estaremos encantados de ayudarle.</p>
+                <div class="icon-cont-inf">
+                    <div class="logo-redes-cont">
+                        <i class='bx bx-map'></i>
+                    </div>
+                    <div class="cont-text">
+                        <p>Dirección:</p>
+                        <p>051, Independencia 15332</p>
+                    </div>
+                </div>
+                <div class="icon-cont-inf">
+                    <div class="logo-redes-cont">
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <div class="cont-text">
+                        <p>Correo</p>
+                        <p>contruccionesgeneralessac@gmail.com</p>
+                    </div>
+                </div>
+                <div class="icon-cont-inf">
+                    <div class="logo-redes-cont">
+                        <i class='bx bx-phone' ></i>
+                    </div>
+                    <div class="cont-text">
+                        <p>Teléfono</p>
+                        <p>993439261</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="redessociales-cont">
+                    <p>Redes sociales</p>
+                    <div class="icon-cont-inf">
+                        <div class="logo-redes-cont"> 
+                            <i class='bx bxl-facebook-square' ></i>
+                        </div>
+                        <div class="logo-redes-cont"> 
+                            <i class='bx bxl-instagram' ></i>
+                        </div>
+                        <div class="logo-redes-cont">
+                            <i class='bx bxl-linkedin-square' ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="map-contacto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104992.69478565709!2d-77.03204124650797!3d-12.05629010376524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e67f822413%3A0xfa66bca4dbf44c92!2sJ.E%20Construcciones%20Generales%20S.A.!5e0!3m2!1ses!2spe!4v1736971404324!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="footer-up">
+            <div class="logo-footer">
+                <img src="../img/logo-footer.png" alt="">
+                <p> Zanei Proyectos es una empresa integrada por profesionales 
+                    especializados en Arquitectura, Diseño y Web</p>
+                <ul>
+                    <li><i class='bx bxl-facebook' style='color:#ffffff'></i></li>
+                    <li><i class='bx bxl-instagram' style='color:#ffffff'></i></li>
+                    <li><i class='bx bxl-linkedin' style='color:#ffffff' ></i></li>
+                </ul>
+            </div>
+            <div class="list-footer flex">
+                <div class="list-menu-footer">
+                    <p>Servicios</p>
+                    <ul>
+                        <li>Estrategia y diseño de espacios</li>
+                        <li>Arquitectura e ingeniería</li>
+                        <li>Construcción y equipamiento</li>
+                    </ul>
+                </div>
+                <div class="list-menu-footer">
+                    <p>Proyectos</p>
+                    <ul>
+                        <li>Tiendas y locales comerciales</li>
+                        <li>Oficinas y despachos</li>
+                        <li>Hoteles y restaurantes</li>
+                        <li>Clínicas y centros sociosanitarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p>2025 © Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+
+    <section class="whatsapp-container">
+        <a href="https://wa.me/51914926263?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
+            <img class="icono-whatsapp" src="../img/whatsApps.png" alt=""></a>
+            <a href="#up"><i class='bx bx-arrow-to-top' style='color: black'></i></a>
+
+    </section>
+</body>
+</html>

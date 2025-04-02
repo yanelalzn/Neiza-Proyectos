@@ -23,13 +23,7 @@
     background-size: 100% 100%;
     cursor: pointer;
 }
-.banner-top{
-    justify-content: end;
-    gap: 2rem;
-    height: 40px;
-    align-items: center;
-    background-color: #000000b8;
-}
+
 .contacto-up ul{
     gap: 1rem;
     align-items: center;

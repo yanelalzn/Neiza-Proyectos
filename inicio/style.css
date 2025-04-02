@@ -23,17 +23,17 @@ a{
 .banner-img{
     background-image: url(../img/banner.jpg);
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
     cursor: pointer;
 }
-.banner-top{
+/* .banner-top{
     justify-content: end;
     gap: 2rem;
     height: 40px;
     align-items: center;
     background-color: #000000b8;
-}
+} */
 .contacto-up ul{
     gap: 1rem;
     align-items: center;
@@ -420,6 +420,7 @@ header label{
 
 .text-service h1{
     font-weight: 300;
+    font-size: 22px;
 }
 
 .text-service .inf-service-down{
@@ -616,7 +617,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    margin-top: 4rem;
+    margin-top: 4em;
     background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 78%) 100%), url(../img/fondo-form.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -912,7 +913,7 @@ footer{
 
     /* header */
     
-    .banner-top, .boton button{
+    .boton button{
         display: none;
     }
     header{

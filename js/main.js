@@ -17,10 +17,10 @@ window.addEventListener('scroll', ()=> {
 
     if(scroll>4){
         header.style.backgroundColor = '#ffff'
-        header.style.top = '0'
+        // header.style.top = '0'
     }else{
         header.style.backgroundColor = 'transparent'
-        header.style.top = 'auto'
-        header.style.padding = '0 4rem'
+        // header.style.top = 'auto'
+        // header.style.padding = '0 4rem'
     }
 })

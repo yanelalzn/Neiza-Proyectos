@@ -18,17 +18,10 @@
 .banner-img{
     background-image: url(../img/banner-servicio.jpg);
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
-}
-.banner-top{
-    justify-content: end;
-    gap: 2rem;
-    height: 40px;
-    align-items: center;
-    background-color: #000000b8;
 }
 .contacto-up ul{
     gap: 1rem;
@@ -152,14 +145,17 @@ header label{
     display: flex;
     justify-content: center;
     align-items: end;
-    height: 60vh;
+    height: 35vh;
     cursor: context-menu;
 }
 
 .banner .title-banner{
-    font-size: 70px;
+    font-size: 40px;
     color: white;
-    font-weight: 600;
+    font-weight: 200;
+    padding: 15px 30px;
+    margin: 0 7rem;
+    background-color: #00000070;
 }
 .title-banner p{
     text-transform: uppercase;
@@ -315,72 +311,155 @@ input[type='checkbox']{
 
 
 
-/* banner servicios */
-
-.diseño-comercial{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    background-image:linear-gradient(to bottom, rgb(0 0 0 / 50%) 0%, rgb(0 0 0 / 0%) 100%), url(../img/diseño.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 4rem 0;
-    scroll-margin-top: 2ex;
-    height: 80vh;
-    width: 100%;
+/* Proyectos */
+.projects{
+    height: auto;
+    margin: 0 0 3rem 0;
 }
-.servicio-cat{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    background-image:linear-gradient(to bottom, rgb(0 0 0 / 50%) 0%, rgb(0 0 0 / 0%) 100%), url(../img/service3.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 4rem 0;
-    scroll-margin-top: 2ex;
-    height: 80vh;
-    width: 100%;
+.projects .title-projects h1{
+    font-weight: 500;
+    margin: 3rem 0;
+    font-family: "Raleway", serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 5rem;
 }
-.recidencial{
+.list-projects{
+    margin: 4rem 0;
+}
+.list-projects ul{
     display: flex;
-    align-items: end;
-    justify-content: center;
-    background-image:linear-gradient(to bottom, rgb(0 0 0 / 50%) 0%, rgb(0 0 0 / 0%) 100%), url(../img/arquitectura-residencial.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 4rem 0;
-    scroll-margin-top: 2ex;
-    height: 80vh;
-    width: 100%;
+    padding-left: 4.5rem;
+}
+.list-projects ul li{
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.8s;
 }
 
-.servicio-cat p{
-    font-size: 60px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
+.list-projects ul li:nth-child(even){
+    padding: 0 10px;
 }
-.diseño-comercial p{
-    font-size: 60px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.recidencial p{
-    font-size: 60px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.list-projects ul li:nth-child(odd):hover{
+
+/* .list-projects ul li:nth-child(odd):hover{
     text-decoration: 2px underline;
-} 
+} */
 
-.diseño-comercial p, .recidencial p, .servicio-cat p, .title-banner p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+/* Galeria */
+
+.list-projects .filter-item.active{
+    border-bottom: 1px solid green;
+}
+
+.galeria-card.hide{
+    display: none;
+}
+
+.galeria-card.show{
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.galeria-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.galeria-card{
+    width: 350px;
+    height: 350px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+}
+.galeria-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;}
+
+.galeria-card:hover img{
+    transform: scale(1.5);
+}
+
+.galeria-card .overlay{
+    background-color: #ffffffbd;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    top: 4%;
+    right: 0;
+    left: 4%;
+    bottom: 0;
+    width: 92%;
+    height: 92%;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.card-inf{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+
+.galeria-card:hover .card-inf{
+    opacity: 1;
+    /* pointer-events: unset; */
+}
+.card-inf a i{
+    transition: 0.8s;
+}
+.card-inf a i:hover{
+    color: black;
+}
+.galeria-card:hover .overlay{
+    opacity: 1;
+}
+
+.card-inf button, .card-inf p, .card-inf .bx-plus{
+    margin: 8px 0;
+}
+
+.card-inf button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 18px;
+}
+
+.card-inf p{
+    text-transform: uppercase;
+
+}
+.card-inf .bx-plus{
+    color: #808080;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.card-inf li{
+    cursor: pointer;
 }
 
 
