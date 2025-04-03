@@ -326,16 +326,25 @@ header label{
     margin-bottom: 1rem;
 }
 
-.logo-redes-cont{
+.logo-redes-cont, .logo-redes-cont-down{
     border-radius: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: black;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.logo-redes-cont-down:hover{
+    background-color: rgb(62, 62, 62);
 }
 
 .logo-redes-cont i{
     font-size: 20px;
 }
 
+.logo-redes-cont-down i{
+    font-size: 25px;
+}
 
 .icon-contacto-p2{
     margin-bottom: 1rem;
@@ -343,7 +352,14 @@ header label{
 
 .redessociales-cont p{
     padding: 1rem;
-    
+}
+
+
+.icon-cont-inf-down{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1rem;
 }
 
 
@@ -464,4 +480,160 @@ footer{
     padding: 6px;
     font-size: 20px;
     transition: 0.8s;
+}
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* banner */
+    .banner-img{
+        height: 30vh;
+    }
+    .banner{
+        height: 20vh;
+    }
+    /* contacto */
+    .contacto{
+        gap: 2rem;
+    }
+
+    .contact-img video {
+        width: 230px;
+        height: 420px;
+    }
+    .contact-img img {
+        width: 230px;
+        height: 460px;
+    }
+    .contact-img{
+        width: 40%;
+    }
+    .form {
+        width: 45%;
+    }
+    .logo-img img{
+        padding: 0;
+    }
+    
+    /* footer */
+
+    .list-footer {
+        width: 65%;
+    }
+
+    .footer-down {
+        padding: 2rem 0;
+    }
+}
+
+
+
+@media(max-width:991px){
+
+    /* header */
+
+    .banner-top, .boton button{
+        display: none;
+    }
+    header{
+        padding: 1rem 2rem;
+        padding: 0 1rem !important;
+    }
+    .logo-img img{
+        padding: 0;
+    }
+    header label{
+        display: block;
+    }
+    .lista-header{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: none;
+    }
+    .lista-header ul {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+    }
+
+    /* banner */
+
+    .banner{
+        padding: 8rem 0 0 0.5rem;
+        align-items: center;
+    }
+
+    .title-banner p{
+        text-align: center;
+    }
+    .banner-img{
+        height: 40vh;
+    }
+    .title-banner p{
+        font-size: 30px;
+    }
+
+    .galleria-portafolio figure, .galleria-portafolio .width-bewtw {
+        width: 95%;
+        height: 45vh;
+    }
+
+    .text-service{
+        width: inherit !important;
+    }
+
+    
+    /* Contacto */
+
+    .contacto{
+        flex-direction: column;
+    }
+    .form, .contact-img{
+        width: 93%;
+    }
+    .contact-img img{
+        width: 50%;
+        height: 352px;
+    }
+    .contact-img video{
+        width: 50%;
+        height: 310px;
+    }
+    .form{
+        padding: 20px 20px;
+    }
+
+    /* footer */
+
+    .footer-up{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .list-footer{
+        width: 100%;
+    }
+
+    .footer-down {
+        padding: 2rem 0;
+    }
+
+    .footer-down p{
+        text-align: center;
+    }
+        
+    .logo-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .logo-footer p{
+        width: 82%;
+        text-align: center;
+}
+
 }

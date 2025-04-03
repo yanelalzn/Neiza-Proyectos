@@ -225,6 +225,28 @@ header label{
 }
 
 
+/* Servicios */
+
+.list-service{
+    background-color: #F0F0F0;
+    padding: 2rem 8rem;
+}
+
+
+.list-service p{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.list-service ul li{
+    list-style: disc;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+
 /* Wsp */
 
 .whatsapp-container{
@@ -329,4 +351,186 @@ footer{
     padding: 6px;
     font-size: 20px;
     transition: 0.8s;
+}
+
+
+@media(max-width:991px){
+
+    /* header */
+
+    .banner-top, .boton button{
+        display: none;
+    }
+    header{
+        padding: 1rem 2rem;
+        padding: 0 1rem !important;
+    }
+    .logo-img img{
+        padding: 0;
+    }
+    header label{
+        display: block;
+    }
+    .lista-header{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: none;
+    }
+    .lista-header ul {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+    }
+
+    /* banner */
+
+    .banner{
+        padding: 8rem 0 0 0;
+        align-items: center;
+    }
+
+    .title-banner p{
+        text-align: center;
+    }
+    .banner-img{
+        height: 40vh;
+    }
+    .title-banner p{
+        font-size: 30px;
+    }
+
+    .galleria-portafolio figure, .galleria-portafolio .width-bewtw {
+        width: 95%;
+        height: 45vh;
+    }
+
+    .text-service{
+        width: inherit !important;
+    }
+
+    /* footer */
+
+    .footer-up{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .list-footer{
+        display: none;
+    }
+
+    .footer-down {
+        padding: 2rem 0;
+    }
+
+    .footer-down p{
+        text-align: center;
+    }
+        
+    .logo-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-footer p{
+        display: none;
+    }
+    /* Nosotros */
+
+    .inf-nosotros{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .paraph-nosotros, .img-video-nosotros{
+        width: 90%;
+    }
+    .paraph-nosotros p{
+        text-align: center;
+        width: 100% !important;
+    }
+    .img-video-nosotros img{
+        width: 200px;
+        height: 352px;
+    }
+    .img-video-nosotros video{
+        width: 200px;
+        height: 310px;
+    }
+    .img-video-nosotros{
+        justify-content: center;
+    }
+
+    /* servicios */
+
+    .list-service {
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* header */
+
+    .logo-img img {
+        padding: 0;
+    }
+
+    /* banner */
+
+    .banner {
+        height: 20vh;
+    }
+
+    .banner-img {
+        height: 30vh;
+    }
+
+    .inf-nosotros {
+        gap: 2rem;
+    }
+    .paraph-nosotros p:nth-child(3), .paraph-nosotros p:nth-child(2){
+        width: 100%;
+    }
+    .inf-nosotros{
+        gap: 2rem;
+    }
+    .img-video-nosotros img{
+        width: 250px;
+        height: 410px;
+    }
+    .img-video-nosotros video{
+        width: 250px;
+        height: 440px;
+    }
+
+
+    /* servicios */
+
+    .list-service{
+        padding: 2rem 8rem 3rem 8rem;
+    }
+
+    /* footer */
+
+    .list-footer {
+        width: 70%;
+        }
+
+    .list-footer {
+        width: 70%;
+    }
+
+    .logo-footer{
+        text-align: center;
+    }
+
+    .logo-footer p {
+        width: 100%;
+        text-align: center;
+    }
+    .logo-footer ul{
+        justify-content: center;
+    }
 }
