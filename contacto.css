@@ -16,7 +16,7 @@
 }
 
 .banner-img{
-    background-image: url(../img/banner-servicio.jpg);
+    background-image: url(img/banner-servicio.jpg);
     width: 100%;
     height: 50vh;
     background-repeat: no-repeat;
@@ -157,97 +157,224 @@ header label{
     margin: 0 7rem;
     background-color: #00000070;
 }
-
-
 .title-banner p{
     text-transform: uppercase;
 }
 
 
-/* Nosotros */
+/* Conctacto */
 
-.nosotros{
-    padding: 3rem 0;
-    background-color: #F0F0F0;
-    scroll-margin-top: 10ex;
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 4rem;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 78%) 100%), url(img/fondo-form.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 4rem 0;
+    scroll-margin-top: 2ex;
 }
 
-.nosotros .title-nosotros h1, .service .title-service h1{
-    text-align: center;
+.form{
+    width: 38%;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+.icon-contacto{
+    color: white;
+}
+
+.contact-img{
+    display: flex;
+    align-items: center;
+    width: 38%;
+    background-color: #00000061;
+    padding: 4rem 2rem;
+    border-radius: 25px;
+}
+.contact-img img{
+    width: 280px;
+    height: 500px;
+    object-fit: cover;
+}
+.contact-img video{
+    width: 280px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.contacto form{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+/* form */
+
+.contacto h1{
+    color: black;
     font-weight: 500;
-    margin: 3rem 0;
-    font-family: "Raleway", serif;
-    text-transform: uppercase;
-    font-size: 40px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px 0;
 }
 
-.inf-nosotros{
+
+.contacto form{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+
+.contacto .name, textarea{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+
+}
+.name{
+    width: calc(50%);
+}
+
+.name input{
+    border-radius: 22px;
+    border: none;
+    background-color: #e1e1e1;
+    width: 95%;
+    padding: 0.8rem;
+}
+
+::placeholder{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contacto input:first-child{
+    margin-right: 16px;
+}
+
+
+.contacto .input-large{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+.input-large input{
+    border-radius: 22px;
+    border: none;
+    background-color: #e1e1e1;
+    width: 98%;
+    padding: 0.8rem;
+}
+
+.contacto textarea{
+    height: 150px;
+    border: none;
+    border-radius: 22px;
+    background-color: #e1e1e1;
+    width: 98%;
+    padding: 0.8rem;
+}
+
+.input-large {
+    margin-bottom: 10px;
+}
+.paraph-contact{
+    color: black;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.contacto input:focus, .form-contacto textarea:focus{
+	border: 2px solid black;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.btn-form{
+	height: 45px;
+	line-height: 45px;
+	width: 98%;
+	background: black;
+	color: #fff;
+	border: none;
+    border-radius: 1000px;
+	cursor: pointer;
+	transition: .1s ease all;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
 }
 
-.img-video-nosotros{
+
+.icon-cont-inf{
     display: flex;
-    justify-content: end;
     align-items: center;
-    width: 50%;
-}
-.img-video-nosotros img{
-    width: 306px;
-    height: 512px;
-    object-fit: cover;
-}
-.img-video-nosotros video{
-    width: 306px;
-    height: 470px;
-    object-fit: cover;
-}
-.paraph-nosotros{
-    width: 40%;
-}
-.paraph-nosotros p{
-    margin: 10px 0;
-}
-.paraph-nosotros p:nth-child(1){
-    font-size: 18px;
-    font-weight: 600
-}
-.paraph-nosotros p:nth-child(2){
-    font-size: 32px;
-    width: 80%;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.paraph-nosotros p:nth-child(3){
-    width: 80%;
-    font-size: 20px;
-    font-weight: 300
+    gap: 10px;
+    margin-bottom: 1rem;
 }
 
-
-/* Servicios */
-
-.list-service{
-    background-color: #F0F0F0;
-    padding: 2rem 8rem;
-}
-
-
-.list-service p{
-    font-size: 25px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 1rem 0;
-}
-
-.list-service ul li{
-    list-style: disc;
-    margin-bottom: 15px;
+.logo-redes-cont, .logo-redes-cont-down{
+    border-radius: 100%;
+    padding: 12px;
+    background-color: black;
+    transition: 0.9s;
     cursor: pointer;
 }
 
+.logo-redes-cont-down:hover{
+    background-color: rgb(62, 62, 62);
+}
+
+.logo-redes-cont i{
+    font-size: 20px;
+}
+
+.logo-redes-cont-down i{
+    font-size: 25px;
+}
+
+.icon-contacto-p2{
+    margin-bottom: 1rem;
+}
+
+.redessociales-cont p{
+    padding: 1rem;
+}
+
+
+.icon-cont-inf-down{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1rem;
+}
+
+
+
+/* map */
+
+.map-contacto{
+    text-align: center;
+}
+.map-contacto iframe{
+    height: 60vh !important;
+    border-radius: 30px;
+    width: 95%;
+    margin: 3rem 0;
+}
 
 /* Wsp */
 
@@ -356,6 +483,52 @@ footer{
 }
 
 
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* banner */
+    .banner-img{
+        height: 30vh;
+    }
+    .banner{
+        height: 20vh;
+    }
+    /* contacto */
+    .contacto{
+        gap: 2rem;
+    }
+
+    .contact-img video {
+        width: 230px;
+        height: 420px;
+    }
+    .contact-img img {
+        width: 230px;
+        height: 460px;
+    }
+    .contact-img{
+        width: 40%;
+    }
+    .form {
+        width: 45%;
+    }
+    .logo-img img{
+        padding: 0;
+    }
+    
+    /* footer */
+
+    .list-footer {
+        width: 65%;
+    }
+
+    .footer-down {
+        padding: 2rem 0;
+    }
+}
+
+
+
 @media(max-width:991px){
 
     /* header */
@@ -390,7 +563,7 @@ footer{
     /* banner */
 
     .banner{
-        padding: 8rem 0 0 0;
+        padding: 8rem 0 0 0.5rem;
         align-items: center;
     }
 
@@ -413,6 +586,27 @@ footer{
         width: inherit !important;
     }
 
+    
+    /* Contacto */
+
+    .contacto{
+        flex-direction: column;
+    }
+    .form, .contact-img{
+        width: 93%;
+    }
+    .contact-img img{
+        width: 50%;
+        height: 352px;
+    }
+    .contact-img video{
+        width: 50%;
+        height: 310px;
+    }
+    .form{
+        padding: 20px 20px;
+    }
+
     /* footer */
 
     .footer-up{
@@ -420,7 +614,7 @@ footer{
         gap: 1rem;
     }
     .list-footer{
-        display: none;
+        width: 100%;
     }
 
     .footer-down {
@@ -435,104 +629,11 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
     .logo-footer p{
-        display: none;
-    }
-    /* Nosotros */
-
-    .inf-nosotros{
-        flex-direction: column-reverse;
-        gap: 20px;
-    }
-    .paraph-nosotros, .img-video-nosotros{
-        width: 90%;
-    }
-    .paraph-nosotros p{
+        width: 82%;
         text-align: center;
-        width: 100% !important;
-    }
-    .img-video-nosotros img{
-        width: 200px;
-        height: 352px;
-    }
-    .img-video-nosotros video{
-        width: 200px;
-        height: 310px;
-    }
-    .img-video-nosotros{
-        justify-content: center;
-    }
-
-    /* servicios */
-
-    .list-service {
-        padding: 2rem 2rem;
-    }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1300px){
-
-    /* header */
-
-    .logo-img img {
-        padding: 0;
-    }
-
-    /* banner */
-
-    .banner {
-        height: 20vh;
-    }
-
-    .banner-img {
-        height: 30vh;
-    }
-
-    .inf-nosotros {
-        gap: 2rem;
-    }
-    .paraph-nosotros p:nth-child(3), .paraph-nosotros p:nth-child(2){
-        width: 100%;
-    }
-    .inf-nosotros{
-        gap: 2rem;
-    }
-    .img-video-nosotros img{
-        width: 250px;
-        height: 410px;
-    }
-    .img-video-nosotros video{
-        width: 250px;
-        height: 440px;
-    }
-
-
-    /* servicios */
-
-    .list-service{
-        padding: 2rem 8rem 3rem 8rem;
-    }
-
-    /* footer */
-
-    .list-footer {
-        width: 70%;
-        }
-
-    .list-footer {
-        width: 70%;
-    }
-
-    .logo-footer{
-        text-align: center;
-    }
-
-    .logo-footer p {
-        width: 100%;
-        text-align: center;
-    }
-    .logo-footer ul{
-        justify-content: center;
-    }
 }

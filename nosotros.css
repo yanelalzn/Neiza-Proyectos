@@ -16,7 +16,7 @@
 }
 
 .banner-img{
-    background-image: url(../img/banner-servicio.jpg);
+    background-image: url(img/banner-servicio.jpg);
     width: 100%;
     height: 50vh;
     background-repeat: no-repeat;
@@ -157,311 +157,96 @@ header label{
     margin: 0 7rem;
     background-color: #00000070;
 }
+
+
 .title-banner p{
     text-transform: uppercase;
 }
 
-/* Servicios */
 
-.galeria{
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
-}
-.list-projects{
-    margin: 5rem 0;
-}
-.list-projects ul{
-    display: flex;
-}
-.list-projects ul li:nth-child(even){
-    padding: 0 10px;
-}
-.list-projects ul li{
-    font-size: 25px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.list-projects ul li a{
-    color: black;
+/* Nosotros */
+
+.nosotros{
+    padding: 3rem 0;
+    background-color: #F0F0F0;
+    scroll-margin-top: 10ex;
 }
 
-.button-service a{
-    color: white;
-}
-
-/* fotos */
-
-
-.galeria-img{
-    display: flex;
-    justify-content: center;
-    gap: 2px;
-    margin: 10px;
-}
-
-.img-service{
-    width: 700px;
-    height: 380px;
-    border: 1px  solid black;
-    background-image: url(../img/service1.png);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-}
-.img-service-2{
-    width: 700px;
-    height: 380px;
-    border: 1px  solid black;
-    background-image: url(../img/service2.png);
-    background-size: 60% 100%;
-    background-attachment: fixed;
-}
-.img-service-3{
-    width: 700px;
-    height: 380px;
-    border: 1px  solid black;
-    background-image: url(../img/service3.png);
-    background-size: 63% 100%;
-    background-attachment: fixed;
-}
-
-.text-service{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-transform: uppercase;
-    width: 400px;
+.nosotros .title-nosotros h1, .service .title-service h1{
     text-align: center;
-    height: 380px;
-}
-
-.text-service label{
-    cursor: pointer;
-}
-.text-service Label:hover i{
-    font-weight: 600;
-}
-.text-service Label:hover{
-    font-weight: 600;
-}
-
-.text-service label, .text-service button{
-    padding: 10px 0;
-}
-
-.text-service h1{
-    font-weight: 300;
-}
-
-.text-service .inf-service-down{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-input[type='checkbox']:checked ~ .inf-service-down{
-    max-height: 600px;
-    padding: 0 5px 10px 5px;
-}
-.inf-service-down p{
-    text-transform: capitalize;
-    padding: 0 2rem;
-    text-align: left;
-}
-
-.button-galeria button{
-    border: 2px solid black;
-    padding: 8px 32px;
-    border-radius: 22px;
-    background-color: white;
-    font-size: 16px;
-    transition: 0.7s;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.button-galeria button:hover{
-    background-color: black;
-    color: white;
-}
-
-input[type='checkbox']{
-    display: none;
-}
-
-.button-service button{
-    background-color: black;
-    color: white;
-    padding: 10px 27px;
-    font-size: 15px;
-    border: none;
-    border-radius: 20px;
-    text-transform: uppercase;
-}
-.button-service button:hover{
-    transform: scale(1.05);
-}
-
-.flex-reverse{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-
-
-/* Proyectos */
-.projects{
-    height: auto;
-    margin: 0 0 3rem 0;
-}
-.projects .title-projects h1{
     font-weight: 500;
     margin: 3rem 0;
     font-family: "Raleway", serif;
     text-transform: uppercase;
     font-size: 40px;
-    padding-left: 5rem;
-}
-.list-projects{
-    margin: 4rem 0;
-}
-.list-projects ul{
-    display: flex;
-    padding-left: 4.5rem;
-}
-.list-projects ul li{
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.8s;
 }
 
-.list-projects ul li:nth-child(even){
-    padding: 0 10px;
-}
-
-/* .list-projects ul li:nth-child(odd):hover{
-    text-decoration: 2px underline;
-} */
-
-/* Galeria */
-
-.list-projects .filter-item.active{
-    border-bottom: 1px solid green;
-}
-
-.galeria-card.hide{
-    display: none;
-}
-
-.galeria-card.show{
-    animation: fadeIn .5s ease;
-}
-
-@keyframes fadeIn{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-.galeria-img{
+.inf-nosotros{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: 4rem;
 }
-.galeria-card{
-    width: 350px;
-    height: 350px;
-    display: block;
-    position: relative;
-    overflow: hidden;
 
+.img-video-nosotros{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
 }
-.galeria-card img{
-    width: 100%;
-    height: 100%;
+.img-video-nosotros img{
+    width: 306px;
+    height: 512px;
     object-fit: cover;
-    transition: transform 0.3s ease-in-out;}
-
-.galeria-card:hover img{
-    transform: scale(1.5);
 }
-
-.galeria-card .overlay{
-    background-color: #ffffffbd;
-    backdrop-filter: blur(15px);
-    position: absolute;
-    top: 4%;
-    right: 0;
-    left: 4%;
-    bottom: 0;
-    width: 92%;
-    height: 92%;
-    opacity: 0;
-    transition: all .5s ease-in-out;
+.img-video-nosotros video{
+    width: 306px;
+    height: 470px;
+    object-fit: cover;
 }
-
-.card-inf{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    opacity: 0;
-    transition: all .6s ease-in-out;
+.paraph-nosotros{
+    width: 40%;
 }
-
-.galeria-card:hover .card-inf{
-    opacity: 1;
-    /* pointer-events: unset; */
+.paraph-nosotros p{
+    margin: 10px 0;
 }
-.card-inf a i{
-    transition: 0.8s;
+.paraph-nosotros p:nth-child(1){
+    font-size: 18px;
+    font-weight: 600
 }
-.card-inf a i:hover{
-    color: black;
-}
-.galeria-card:hover .overlay{
-    opacity: 1;
-}
-
-.card-inf button, .card-inf p, .card-inf .bx-plus{
-    margin: 8px 0;
-}
-
-.card-inf button{
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 18px;
-}
-
-.card-inf p{
+.paraph-nosotros p:nth-child(2){
+    font-size: 32px;
+    width: 80%;
+    font-weight: 600;
     text-transform: uppercase;
-
 }
-.card-inf .bx-plus{
-    color: #808080;
+.paraph-nosotros p:nth-child(3){
+    width: 80%;
+    font-size: 20px;
+    font-weight: 300
+}
+
+
+/* Servicios */
+
+.list-service{
+    background-color: #F0F0F0;
+    padding: 2rem 8rem;
+}
+
+
+.list-service p{
     font-size: 25px;
-    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0;
 }
 
-.card-inf li{
+.list-service ul li{
+    list-style: disc;
+    margin-bottom: 15px;
     cursor: pointer;
 }
-
 
 
 /* Wsp */
@@ -570,9 +355,11 @@ footer{
     transition: 0.8s;
 }
 
+
 @media(max-width:991px){
+
     /* header */
- 
+
     .banner-top, .boton button{
         display: none;
     }
@@ -583,7 +370,6 @@ footer{
     .logo-img img{
         padding: 0;
     }
-
     header label{
         display: block;
     }
@@ -600,51 +386,31 @@ footer{
         padding: 30px;
         align-items: center;
     }
+
     /* banner */
 
     .banner{
         padding: 8rem 0 0 0;
         align-items: center;
     }
+
     .title-banner p{
         text-align: center;
-        font-size: 30px;
     }
     .banner-img{
         height: 40vh;
     }
-
-    /* list */
-
-    .list-projects ul{
-        padding-left: 0;
+    .title-banner p{
+        font-size: 30px;
     }
 
-    /* album */
-
-    .list-projects ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    .galleria-portafolio figure, .galleria-portafolio .width-bewtw {
+        width: 95%;
+        height: 45vh;
     }
 
-    /* servicios */
-
-    .diseño-comercial p{
-        text-align: center;
-    }
-
-    .diseño-comercial, .recidencial, .servicio-cat{
-        height: 55vh;
-    }
-    .img-service{
-        width: 100%;
-    }
-    .galeria-img{
-        flex-direction: column;
-    }
-    .servicio-cat p, .recidencial p, .diseño-comercial p{
-        font-size: 50px;
+    .text-service{
+        width: inherit !important;
     }
 
     /* footer */
@@ -654,7 +420,7 @@ footer{
         gap: 1rem;
     }
     .list-footer{
-        width: 100%;
+        display: none;
     }
 
     .footer-down {
@@ -669,11 +435,39 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
     }
     .logo-footer p{
-        width: 82%;
+        display: none;
+    }
+    /* Nosotros */
+
+    .inf-nosotros{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .paraph-nosotros, .img-video-nosotros{
+        width: 90%;
+    }
+    .paraph-nosotros p{
         text-align: center;
+        width: 100% !important;
+    }
+    .img-video-nosotros img{
+        width: 200px;
+        height: 352px;
+    }
+    .img-video-nosotros video{
+        width: 200px;
+        height: 310px;
+    }
+    .img-video-nosotros{
+        justify-content: center;
+    }
+
+    /* servicios */
+
+    .list-service {
+        padding: 2rem 2rem;
     }
 }
 
@@ -681,30 +475,51 @@ footer{
 
     /* header */
 
-    .banner-img{ 
-        height: 30vh;
-    }
-    .banner{
-        height: 20vh;
-    }
-    .diseño-comercial, .recidencial, .servicio-cat{
-        height: 40vh;
-    }
-    .img-service{
-        width: 600px;
-    }
     .logo-img img {
         padding: 0;
     }
 
-     /* footer */
-    
-     .list-footer {
-        width: 70%;
+    /* banner */
+
+    .banner {
+        height: 20vh;
+    }
+
+    .banner-img {
+        height: 30vh;
+    }
+
+    .inf-nosotros {
+        gap: 2rem;
+    }
+    .paraph-nosotros p:nth-child(3), .paraph-nosotros p:nth-child(2){
+        width: 100%;
+    }
+    .inf-nosotros{
+        gap: 2rem;
+    }
+    .img-video-nosotros img{
+        width: 250px;
+        height: 410px;
+    }
+    .img-video-nosotros video{
+        width: 250px;
+        height: 440px;
+    }
+
+
+    /* servicios */
+
+    .list-service{
+        padding: 2rem 8rem 3rem 8rem;
     }
 
     /* footer */
-    
+
+    .list-footer {
+        width: 70%;
+        }
+
     .list-footer {
         width: 70%;
     }
