@@ -77,7 +77,9 @@ header label{
     display: initial;
 }
 
-
+.logo-img img{
+    padding: 0 0 0 4rem;
+}
 
 
 /* slider */
@@ -177,35 +179,6 @@ header label{
     }
 }
 
-
-/* Contato black */
-
-.contact{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    width: 100%;
-    background-color: black;
-    color: white;
-    height: 75px;
-}
-
-.contact p{
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.contact button{
-    border: none;
-    background-color: white;
-    color: black;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-}
 
 
 /* Album */
