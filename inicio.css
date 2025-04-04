@@ -293,6 +293,9 @@ header label{
 
 .service{
     scroll-margin-top: 6ex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inf-service{
@@ -300,12 +303,13 @@ header label{
     justify-content: center;
     gap: 2px;
     margin: 10px;
+    border: 1px solid black;
+    width: fit-content;
 }
 
 .img-service{
     width: 700px;
     height: 380px;
-    border: 1px  solid black;
     background-image: url(img/service1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -314,20 +318,17 @@ header label{
 .img-service-2{
     width: 700px;
     height: 380px;
-    border: 1px  solid black;
     background-image: url(img/service2.png);
     background-size: 100% 100%;
 }
 .img-service-3{
     width: 700px;
     height: 380px;
-    border: 1px  solid black;
     background-image: url(img/service3.png);
     background-size: 100% 100%;
 }
 
 .text-service{
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,6 +358,7 @@ header label{
 .text-service h1{
     font-weight: 300;
     font-size: 22px;
+    width: 90%;
 }
 
 .text-service .inf-service-down{
