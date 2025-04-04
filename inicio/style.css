@@ -13,51 +13,12 @@ a{
     color: white;
 }
 
-
-/* Banner */
-
 .flex{
     display: flex;
 }
 
-.banner-img{
-    background-image: url(../img/banner.jpg);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    cursor: pointer;
-}
-/* .banner-top{
-    justify-content: end;
-    gap: 2rem;
-    height: 40px;
-    align-items: center;
-    background-color: #000000b8;
-} */
-.contacto-up ul{
-    gap: 1rem;
-    align-items: center;
-}
-.contacto-up ul li{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    color: white;
-}
-.redes-up{
-    background-color: #575252c4;
-    padding: 8px 10px;
-    margin: 0 35px 0 0;
-}
-.redes-up .bx{
-    font-size: 20px;
-}
-.redes-up ul{
-    gap: 0.3rem;
-}
 
-/* header */
+/* Header */
 
 header{
     position: fixed;
@@ -100,26 +61,6 @@ header{
     right: 0;
 }
 
-.boton button{
-    border: none;
-    border: 2px solid black;
-    background-color: transparent;
-    padding: 10px 10px;
-    color: white;
-    font-size: 14px;
-    color: black;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.8s;
-}
-
-.boton button:hover{
-    font-weight: 600;
-}
-
-.logo-img img{
-    padding: 0 0 0 4rem;
-}
 
 /* Menu */
 
@@ -136,81 +77,106 @@ header label{
     display: initial;
 }
 
-/* Banner */
-.banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-    padding: 8rem 0 0 8rem;
-    gap: 15px;
-    cursor: context-menu;
-}
 
-.banner .welcome-benner p{
-    background-color: #575252;
-    padding: 7px 8px;
-    width: 17rem;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-}
 
-.banner .title-banner{
-    font-size: 55px;
-    color: black;
-    font-weight: 600;
-}
-.title-banner p{
-    text-transform: capitalize;
-}
-.banner .text-banner{
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
-    padding: 0 10px;
-}
-.text-banner p, .button-banner button{
-    font-weight: 600;
-}
-.portafolio{
-    background-color: transparent;
-    border: 2px solid black;
-    padding: 8px;
-    font-size: 20px;
-    width: 9rem;
-    display: flex;
-    align-items: center;
-}
-.portafolio a{
-    display: flex;
-    transition: 0.8s;
-    color: black;
-}
 
-.button-banner{
-    padding: 0 3px;
-    display: flex;
-    gap: 1rem;
+/* slider */
+
+.slider{
+    width: 100%;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
 }
-.servicio{
-    background-color: black;
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 2000px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
     border: none;
-    padding: 8px;
-    font-size: 20px;
-    color: white;
-    width: 9rem;
+    font-family: monospace;
+    font-weight: bold;
 }
-.button-banner button{
-    cursor: pointer;
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-.button-banner button{
-    transition: 0.3s;
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
 }
 
-.button-banner button:hover{
-    transform: scale(1.03);
+.inf-banner{
+    position: absolute;
+    top: 75%;
+    margin: 0 12rem;
 }
+
+.inf-banner p{
+    font-size: 50px;
+    color: #ffff;
+    text-transform: uppercase;
+    background-color: #00000070;
+}
+
+.inf-banner p{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+
+    /* animation-delay: 1.4s; */
+}
+
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
 
 /* Contato black */
 
@@ -369,7 +335,6 @@ header label{
     border: 1px  solid black;
     background-image: url(../img/service1.png);
     background-size: 100% 100%;
-    background-attachment: fixed;
     background-repeat: no-repeat;
 
 }
@@ -379,7 +344,6 @@ header label{
     border: 1px  solid black;
     background-image: url(../img/service2.png);
     background-size: 100% 100%;
-    background-attachment: fixed;
 }
 .img-service-3{
     width: 700px;
@@ -387,7 +351,6 @@ header label{
     border: 1px  solid black;
     background-image: url(../img/service3.png);
     background-size: 100% 100%;
-    background-attachment: fixed;
 }
 
 .text-service{
@@ -469,7 +432,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
     font-family: "Raleway", serif;
     text-transform: uppercase;
     font-size: 40px;
-    padding-left: 5rem;
+    padding-left: 4.5rem;
 }
 .list-projects{
     margin: 4rem 0;
@@ -944,18 +907,16 @@ footer{
 
     /* banner */
     
-    .banner{
-        padding: 8rem 0 0 0.5rem;
-        align-items: center;
+    .slider{
+        height: 500px;
     }
-    .title-banner p{
-        text-align: center;
+    .inf-banner p {
+        font-size: 20px;
     }
-    .banner-img{
-        height: 80vh;
-    }
-    .banner .title-banner{
-        font-size: 50px;
+    .inf-banner {
+        position: absolute;
+        top: 75%;
+        margin: 0 2rem;
     }
 
     /* Contacto */
@@ -1091,10 +1052,12 @@ footer{
         height: 60vh;
     }
 
-    .banner{
-        height: 50vh;
-        padding: 8rem 0 0 6rem;
+    .inf-banner {
+        position: absolute;
+        top: 75%;
+        margin: 0 8rem;
     }
+
     .paraph-nosotros p:nth-child(3), .paraph-nosotros p:nth-child(2){
         width: 100%;
     }

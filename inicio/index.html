@@ -10,40 +10,83 @@
     <title>Neiza Proyectos</title>
 </head>
 <body>
-    <div class="banner-img">
-        <nav>
-            <header class="flex" id="Header">
-                <div class="logo-img">
-                    <a href="index.html"><img src="../img/logo.png" alt=""></a>
+
+
+    <div class="slider">
+        <header class="flex" id="Header">
+            <div class="logo-img">
+                <a href="index.html"><img src="../img/logo.png" alt=""></a>
+            </div>
+            <input type="checkbox" id="menu" />
+            <div class="header-left flex">
+                <div class="lista-header">
+                    <ul class="flex">
+                        <li class="line"><a href="../inicio/index.html">Inicio</a></li>
+                        <li class="line"><a href="../nosotros/index.html">Nosotros</a></li>
+                        <li class="line"><a href="../proyectos/index.html">Proyectos</a></li>
+                        <li class="line"><a href="../contacto/index.html">Contacto</a></li>
+                    </ul>
                 </div>
-                <input type="checkbox" id="menu" />
-                <div class="header-left flex">
-                    <div class="lista-header">
-                        <ul class="flex">
-                            <li class="line"><a href="../inicio/index.html">Inicio</a></li>
-                            <li class="line"><a href="../nosotros/index.html">Nosotros</a></li>
-                            <li class="line"><a href="../proyectos/index.html">Proyectos</a></li>
-                            <li class="line"><a href="../contacto/index.html">Contacto</a></li>
-                        </ul>
-                    </div>
+            </div>
+            <label for="menu">
+                <img src="../img/menu.png" alt="" class="menu-icono">
+            </label>
+        </header>
+        <div class="list">
+            <div class="item">
+                <img src="../img/banner4.jpg" alt="">
+                <div class="inf-banner">
+                    <p>Oficina de Surquillo Lima</p>
                 </div>
-                <label for="menu">
-                    <img src="../img/menu.png" alt="" class="menu-icono">
-                </label>
-            </header>
-        </nav>
-        <div class="banner">
-            <div class="welcome-benner"><p>Bienvenido a Neiza Proyecto</p></div>
-            <div class="title-banner"><p>Transformamos espacios, <br> creamos futuros.</p></div>
-            <div class="text-banner"><p>¡A comenzar una aventura!</p></div>
-            <div class="button-banner">
-                <button class="portafolio">
-                    <a href="../portafolio/index.html">Portafolio<i class='bx bx-right-arrow-alt bx-fade-right bx-flip-vertical' ></i></a>
-                </button>
-                <button class="servicio"><a href="../servicios/index.html">Servicios</a> </button>
+            </div>
+            <div class="item">
+                <img src="../img/banner3.jpg" alt="">
+                <div class="inf-banner">
+                    <p>Terraza los Maldinis</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../img/banner2.jpg" alt="">
+                <div class="inf-banner">
+                    <p>Diseño de Interiores</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../img/banner.jpg" alt="">
+                <div class="inf-banner">
+                    <p>Estudio Arquitectura</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../img/banner5.jpg" alt="">
+                <div class="inf-banner">
+                    <p>Edificio Los Delfines</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../img/banner6.jpg" alt="">
+                <div class="inf-banner">
+                    <p>Casa Mendoza</p>
+                </div>
             </div>
         </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
+
+
+
+
+
     <div class="album">
         <div class="title-album">
             <p class="first-title">Especialistas en <br> Arquitectura </p>
@@ -299,5 +342,8 @@
         <a href="https://wa.me/51914926263?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
             <img class="icono-whatsapp" src="../img/whatsApps.png" alt=""></a>
     </section>
+
+    <script src="../js/slider.js" defer></script>
+
 </body>
 </html>
