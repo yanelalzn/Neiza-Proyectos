@@ -7,6 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="js/javascript.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="js/scroll.js" defer></script>
     <title>Neiza Proyectos</title>
 </head>
 <body>
@@ -83,28 +84,28 @@
 
     <div class="album">
         <div class="title-album">
-            <p class="first-title">Especialistas en <br> Arquitectura </p>
-            <p class="second-title"> Diseñamos e implementamos 
+            <p class="first-title hidden">Especialistas en <br> Arquitectura </p>
+            <p class="second-title hidden"> Diseñamos e implementamos 
                 espacios que se adaptan a tus necesidades. Reflejando
                 tu estilo de vida o marca, con una identidad única y cautivadora.</p>
         </div>
         <div class="img-album">
-            <div class="img-unid">
+            <div class="img-unid hidden">
                 <img src="img/album5.jpg" alt="">
             </div>
-            <div class="img-unid">
+            <div class="img-unid hidden">
                 <img src="img/album2.png" alt="">
             </div>
-            <div class="img-unid">
+            <div class="img-unid hidden">
                 <img src="img/album6.jpg" alt="">
             </div>
-            <div class="img-unid">
+            <div class="img-unid hidden">
                 <img src="img/album1.jpg" alt="">
             </div>
-            <div class="img-unid">
+            <div class="img-unid hidden">
                 <img class="img-right" src="img/album4.jpg" alt="">
             </div>
-            <div class="img-unid">
+            <div class="img-unid hidden">
                 <img class="img-right" src="img/album3.png" alt="">
             </div>
         </div>
@@ -116,15 +117,15 @@
         </div>
         <div class="inf-nosotros">
             <div class="img-video-nosotros">
-                <video controls autoplay loop muted width="300" height="600">
+                <video controls autoplay loop muted width="300" height="600" class="hidden">
                     <source src="img/video-nosotros.mp4" type="video/mp4">
                 </video>
-                <img src="img/nosotros.png" alt="">
+                <img src="img/nosotros.png" alt="" class="hidden">
             </div>
             <div class="paraph-nosotros">
-                <p>¿Quienes somos?</p>
-                <p>Conoce  a Neiza Proyectos: <br> Diseño y Arquitectura Personalizada.</p>
-                <p>Somos un equipo de arquitectos y diseñadores apasionados por 
+                <p class="hidden">¿Quienes somos?</p>
+                <p class="hidden">Conoce  a Neiza Proyectos: <br> Diseño y Arquitectura Personalizada.</p>
+                <p class="hidden">Somos un equipo de arquitectos y diseñadores apasionados por 
                 transformar espacios y crear ambientes únicos tanto en interiores 
                 como exteriores. Nos especializamos en diseñar soluciones innovadoras 
                 y funcionales que fusionan estética y practicidad, adaptándonos a 
@@ -142,109 +143,34 @@
         <div class="title-service">
             <h1>Servicios</h1>
         </div>
-        <div class="galeria">
-            <div class="galeria-img">
-                <div class="galeria-card uno">
-                    <img src="img/album1.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="card-inf">
-                        <p style="font-weight: 600;">Diseño Interior</p>
-                        <p class="inf-service-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Possimus ex mollitia consequuntur.</p>
-                        <a href="proyectos.html"><i class='bx bx-plus'></i></a>
-                    </div>
-                </div>
-                <div class="galeria-card dos">
-                    <img src="img/album2.png" alt="">
-                    <div class="overlay"></div>
-                    <div class="card-inf">
-                        <p style="font-weight: 600;">Diseño Interior</p>
-                        <p class="inf-service-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Possimus ex mollitia consequuntur.</p>
-                        <a href="proyectos.html"><i class='bx bx-plus'></i></a>
-                    </div>
-                </div>
-                <div class="galeria-card tres">
-                    <img src="img/album3.png" alt="">
-                    <div class="overlay"></div>
-                    <div class="card-inf">
-                        <p style="font-weight: 600;">Diseño Interior</p>
-                        <p class="inf-service-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Possimus ex mollitia consequuntur.</p>
-                        <a href="proyectos.html"><i class='bx bx-plus'></i></a>
-                    </div>
-                </div>
+        <div class="servicio">
+            <div class="servicio-first hidden">
+                <img src="img/album1.jpg" alt="">
+                <h4 class="hidden">Remodelación:</h4>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Consectetur fuga accusantium corrupti quaerat harum.</p>
+            </div>
+            <div class="servicio-first hidden">
+                <img src="img/album2.png" alt="">
+                <h4 class="hidden">Planos de Arquitectura:</h4>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Consectetur fuga accusantium corrupti quaerat harum.</p>
+            </div>
+            <div class="servicio-first hidden">
+                <img src="img/album3.png" alt="">
+                <h4 class="hidden">Title one</h4>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Consectetur fuga accusantium corrupti quaerat harum.</p>
+            </div>
+            <div class="servicio-first hidden">
+                <img src="img/album4.jpg" alt="">
+                <h4 class="hidden">Title one</h4>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Consectetur fuga accusantium corrupti quaerat harum.</p>
             </div>
         </div>
     </div>
-    <div class="service">
-        <div class="title-service">
-            <h1>Servicios</h1>
-        </div>
-        <div class="inf-service">
-            <div class="img-service">
-            </div>
-            <div class="text-service">
-                <h1>Diseño y desarrollo de proyectos de arquitectura</h1>
-                <input type="checkbox" id="primera">
-                <label for="primera">
-                    <i class='bx bx-plus'></i>
-                    INFO
-                </label>
-                <div class="inf-service-down">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                        elit. Enim, repellat temporibus! Odio reiciendis cum
-                        quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                        inventore eius fugit quaerat debitis officiis nihil.</p>
-                </div>
-                <div class="button-service">
-                    <button> <a href="proyectos.html">Ver más</a></button>
-                </div>
-            </div>
-        </div>
-        <div class="inf-service flex-reverse">
-            <div class="img-service-2">
-            </div>
-            <div class="text-service">
-                <h1>Diseño y desarrollo de detalles Constructivos</h1>
-                <input type="checkbox" id="segunda">
-                <label for="segunda">
-                    <i class='bx bx-plus'></i>
-                    INFO
-                </label>
-                <div class="inf-service-down">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                        elit. Enim, repellat temporibus! Odio reiciendis cum
-                        quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                        inventore eius fugit quaerat debitis officiis nihil.</p>
-                </div>
-                <div class="button-service">
-                    <button> <a href="proyectos.html">Ver más</a></button>
-                </div>
-            </div>
-        </div>
-        <div class="inf-service">
-            <div class="img-service-3">
-            </div>
-            <div class="text-service">
-                <h1>Consultoría inmobiliaria, terrenos y propiedades</h1>
-                <input type="checkbox" id="tercera">
-                <label for="tercera">
-                    <i class='bx bx-plus'></i>
-                    INFO
-                </label>
-                <div class="inf-service-down">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                        elit. Enim, repellat temporibus! Odio reiciendis cum
-                        quis vitae aliquam qui, alias, repellat in aperiam dignissimos 
-                        inventore eius fugit quaerat debitis officiis nihil.</p>
-                </div>
-                <div class="button-service">
-                    <button> <a href="proyectos.html">Ver más</a></button>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="projects">
         <div class="title-projects">
             <h1>Proyectos Recientes</h1>
