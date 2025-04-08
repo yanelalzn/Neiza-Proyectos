@@ -289,6 +289,15 @@ header label{
     font-weight: 300
 }
 
+/* Servicios 2 */
+
+.inf-service-up{
+    font-size: 12px;
+    width: 70%;
+    text-transform: capitalize !important;
+}
+
+
 /* servicios */
 
 .service{
@@ -400,6 +409,14 @@ input[type='checkbox']:checked ~ .inf-service-down{
 .projects{
     height: auto;
     margin: 4rem 0;
+}
+.projects .title-projects h1{
+    font-weight: 500;
+    margin: 3rem 0;
+    font-family: "Raleway", serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 4.5rem;
 }
 .projects .title-projects h1{
     font-weight: 500;
