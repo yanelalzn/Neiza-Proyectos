@@ -26,7 +26,7 @@ header{
     top: auto;
     width: 100%;
     justify-content: space-between;
-    padding: 1rem 4rem;
+    padding: 10px 4rem 0;
     align-items: center;
 }
 .header-left{
@@ -79,6 +79,7 @@ header label{
 
 .logo-img img{
     padding: 0 0 0 4rem;
+    width: 80%;
 }
 
 
@@ -124,6 +125,7 @@ header label{
     border: none;
     font-family: monospace;
     font-weight: bold;
+    cursor: pointer;
 }
 .slider .dots{
     position: absolute;
@@ -144,6 +146,7 @@ header label{
     margin: 10px;
     border-radius: 20px;
     transition: 0.5s;
+    cursor: pointer;
 }
 .slider .dots li.active{
     width: 30px;
@@ -179,56 +182,9 @@ header label{
 }
 
 
-
-/* Album */
-.title-album{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 4rem;
-    margin: 4rem 0;
-}
-
-.title-album .first-title{
-    width: 40%;
-    font-weight: 600;
-    font-size: 30px;
-}
-.title-album .second-title{
-    width: 50%;
-    font-size: 22px;
-    text-align: center;
-}
-
-.album .img-album{
-    display: flex;
-    justify-content: center;
-    gap: 1.4rem;
-}
-.img-album .img-unid{
-    width: 230px;
-    height: 477px;
-    overflow: hidden;
-}
-.img-album .img-unid img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.img-unid:hover img{
-    transform: scale(1.5);
-}
-
-.img-right{
-    object-position: 100% 5%;
-}
-
 /* Nosotros */
 
 .nosotros{
-    margin: 4rem 0;
     padding: 1rem 0 3rem 0;
     background-color: #F0F0F0;
     scroll-margin-top: 10ex;
@@ -305,25 +261,25 @@ header label{
     width: 18%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .servicio-first img{
     width: 90%;
     height: 45vh;
-    transition-delay: 200ms;
     transform: translate(6%);
+    margin-bottom: 10px;
 }
 
 .servicio-first h4{
     transform: translate(6%);
-    transition-delay: 400ms;
+    color: black;
+    margin-bottom: 10px;
 }
 
 .servicio-first p{
     width: 90%;
     transform: translate(6%);
-    transition-delay: 600ms;
+    color: black;
 }
 
 /* Servicios 2 */
@@ -487,7 +443,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
 /* Galeria */
 
 .list-projects .filter-item.active{
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid black;
 }
 
 .galeria-card.hide{
@@ -554,7 +510,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
     align-items: center;
     text-align: center;
     position: absolute;
-    top: 17%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, 50%);
     opacity: 0;
@@ -589,7 +545,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
 
 .card-inf p{
     text-transform: uppercase;
-
+    color: black;
 }
 .card-inf .bx-plus{
     color: #808080;
@@ -867,46 +823,6 @@ footer{
     font-size: 20px;
     transition: 0.8s;
 }
-
-
-/* scroll */
-
-.img-unid{
-    transition-delay: 600ms;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateY(50px);
-    transition: all 1s;
-    animation-delay: 1.4s;
-}
-
-.hiden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translatex(100%);
-    transition: all 1s;
-    animation-delay: 1.4s;
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translatex(0);
-}
-
-
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
-
-
 
 /* responsive */
 
