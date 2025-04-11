@@ -16,11 +16,12 @@ window.addEventListener('scroll', ()=> {
     var scroll = window.scrollY
 
     if(scroll>4){
-        header.style.backgroundColor = '#ffff'
+        header.style.backgroundColor = 'rgba(0,0,0,0.17)'
+        header.style.padding = ' 1rem 5rem 0 4rem'
         // header.style.top = '0'
     }else{
-        header.style.backgroundColor = 'transparent'
-        // header.style.top = 'auto'
-        // header.style.padding = '0 4rem'
+        header.style.backgroundColor = ''
+        header.style.padding = ' 3rem 5rem 0 4rem'
+
     }
 })

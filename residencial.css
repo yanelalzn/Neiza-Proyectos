@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* Header */
+
+header{
+    position: fixed;
+    z-index: 10000;
+    top: auto;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3rem 5rem 0 4rem;
+    align-items: center;
+}
+.header-left{
+    justify-content: end;
+    gap: 3rem;
+    align-items: center;
+}
+.lista-header ul{
+    gap: 2rem;
+}
+.lista-header ul li a{
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.line{
+    position: relative;
+ }
+.line:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -7px;
+    right: 100%;
+    transition: all .4s;
+    will-change: width;
+}
+.line:hover:after{
+    width: 100%;
+    right: 0;
+}
+
+
+/* Menu */
+
+header label{
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+#menu{
+    display: none;
+}
+#menu:checked ~ .header-left .lista-header{
+    display: initial;
+}
+
+.logo-img img{
+    padding: 0 0 0 4rem;
+    width: 80%;
+}
+
+
+/* slider */
+
+.slider{
+    width: 100%;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 2000px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+
+.title-banner{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+}
+
+.inf-banner{
+    position: absolute;
+    top: 80%;
+    right: 50%;
+}
+
+.icon-banner{
+    position: absolute;
+    top: 80%;
+    right: 45%;
+}
+
+.title-banner p{
+    font-size: 30px;
+    color: #ffff;
+    text-transform: capitalize;
+}
+
+.inf-banner p{
+    font-size: 10px;
+    color: #ffff;
+    text-transform: capitalize;
+    width: 30%;
+}
+
+.icon-banner i{
+    font-size: 50px;
+    color: white;
+}
+
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+
+/* inf project */
+
+/* Pictures */
+
+.inf-project{
+    display: flex;
+    padding: 4rem 0;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 5px;
+}
+.inf-project-left{
+    width: 40%;
+}
+
+.picture-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+
+.text-picture p{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.column-picture img{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.picture{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-picture{
+    flex: 25%;
+    padding: 5px;
+}
+
+.inf-left p{
+    padding: 10px;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inf-right p{
+    padding: 10.2px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.378);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+/* concept-project */
+
+.concept-project{
+    display: flex;
+    justify-content: center;
+}
+
+.contain-concept{
+    width: 40%;
+    margin: 10em 0;
+}
+
+.contain-concept p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: normal;
+    text-align: justify;
+    color: 96, 96, 96;
+
+}
+
+
+/* pictures-project */
+
+
+.picture-project .picture1 img{
+    width: 100%;
+}
+
+.file2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.file2 img{
+    padding: 50px 0;
+    width: 48%;
+    height: 110vh;
+}
+
+.file3 img{
+    padding: 0 30px;
+    width: 100%;
+    height: 110vh;
+}
