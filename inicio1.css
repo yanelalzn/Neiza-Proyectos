@@ -30,10 +30,12 @@ header{
     align-items: center;
     transition: 0.6s;
 }
+
 header.sticky{
     padding: 1rem 5rem 1rem 4rem;
     background-color: white;
 }
+
 .header-left{
     justify-content: end;
     gap: 3rem;
@@ -47,9 +49,11 @@ header.sticky{
     font-weight: 500;
     text-transform: capitalize;
 }
+
 header.sticky ul li a{
     color: black;
 }
+
 .line{
     position: relative;
  }
@@ -411,12 +415,13 @@ input[type='checkbox']:checked ~ .inf-service-down{
 /* Proyectos */
 .projects{
     height: auto;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 78%) 100%), url(img/fondo-proyectos.png);
+    background-color: white;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 78%) 100%), url(img/fondo-proyectos.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
-    object-fit: cover;
-    padding: 8rem 0 10rem 0;
+    background-size: 100% 100%; 
+    object-fit: cover;*/
+    padding: 2rem 0 0 0;
 }
 
 
@@ -426,7 +431,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
     text-transform: uppercase;
     font-size: 40px;
     padding-left: 4.5rem;
-    color: white;
+    color: black;
 }
 
 .list-projects{
@@ -441,16 +446,21 @@ input[type='checkbox']:checked ~ .inf-service-down{
     font-weight: 600;
     cursor: pointer;
     transition: 0.8s;
-    background-color: rgba(0, 0, 0, 0.17);
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 25px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* background-color: rgba(0, 0, 0, 0.17);
     border: 1px solid white;
     color: white;
     padding: 25px 15px;
-    transition: 0.9s;
+    transition: 0.9s; */
 }
 
-.list-projects ul li:hover{
+/* .list-projects ul li:hover{
     background-color: rgba(0,0,0,0.7);
-}
+} */
 
 /* .list-projects ul li:nth-child(even){
     padding: 0 10px;
@@ -463,7 +473,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
 /* Galeria */
 
 .list-projects .filter-item.active{
-    background-color: rgba(0,0,0,0.7);
+    background-color: #e5e5e5;
 }
 
 .galeria-card.hide{
@@ -648,11 +658,11 @@ input[type='checkbox']:checked ~ .inf-service-down{
     justify-content: center;
     gap: 4rem;
     margin-top: 4em;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 78%) 100%), url(img/fondo-form.jpg);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 35%) 100%), url(img/fondo-proyectos.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 4rem 0;
+    padding: 6rem 0;
     scroll-margin-top: 2ex;
 }
 

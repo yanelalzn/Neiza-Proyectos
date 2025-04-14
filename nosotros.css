@@ -58,6 +58,11 @@ header{
     justify-content: space-between;
     padding: 3rem 5rem 0px 4rem;
     align-items: center;
+    transition: 0.6s;
+}
+header.sticky{
+    padding: 1rem 5rem 1rem 4rem;
+    background-color: white;
 }
 .header-left{
     justify-content: end;
@@ -71,6 +76,9 @@ header{
     color: white;
     font-weight: 500;
     text-transform: capitalize;
+}
+header.sticky ul li a{
+    color: black;
 }
 .line, .service-line{
     position: relative;
@@ -126,6 +134,7 @@ header{
 .logo-img img{
     padding: 0 0 0 4rem;
     width: 80%;
+    transition: 0.6s;
 }
 
 /* Menu */
@@ -148,7 +157,7 @@ header label{
     display: flex;
     justify-content: flex-start;
     align-items: end;
-    height: 90vh;
+    height: 85vh;
     cursor: context-menu;
 }
 
@@ -165,6 +174,16 @@ header label{
     text-transform: uppercase;
 }
 
+.icon-banner{
+    position: absolute;
+    top: 80%;
+    right: 45%;
+}
+
+.icon-banner i{
+    font-size: 50px;
+    color: white;
+}
 
 /* Nosotros */
 

@@ -56,6 +56,11 @@ header{
     justify-content: space-between;
     padding: 10px 4rem 0;
     align-items: center;
+    transition: 0.6s;
+}
+header.sticky{
+    padding: 1rem 5rem 1rem 4rem;
+    background-color: white;
 }
 .header-left{
     justify-content: end;
@@ -69,6 +74,9 @@ header{
     color: black;
     font-weight: 500;
     text-transform: uppercase;
+}
+header.sticky ul li a{
+    color: black;
 }
 .line, .service-line{
     position: relative;
@@ -124,6 +132,7 @@ header{
 .logo-img img{
     padding: 0 0 0 4rem;
     width: 80%;
+    transition: 0.6s;
 }
 
 /* Menu */
