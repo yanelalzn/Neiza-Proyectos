@@ -386,7 +386,9 @@ footer{
     }
     header{
         padding: 1rem 2rem;
-        padding: 0 1rem !important;
+    }
+    header.sticky {
+        padding: 1rem 2rem;
     }
     .logo-img img{
         padding: 0;
@@ -407,12 +409,17 @@ footer{
         padding: 30px;
         align-items: center;
     }
+    .lista-header ul li a{
+        color: black;
+    }
 
     /* banner */
 
     .banner{
         padding: 8rem 0 0 0;
         align-items: center;
+        height: 35vh;
+        justify-content: center;
     }
 
     .title-banner p{
@@ -432,6 +439,21 @@ footer{
 
     .text-service{
         width: inherit !important;
+    }
+    .icon-banner {
+        top: 30%;
+    }
+
+    /* servicio */
+
+    .paraph-nosotros p:nth-child(1){
+        font-size: 15px;
+    }
+    .paraph-nosotros p:nth-child(2){
+        font-size: 24px;
+    }
+    .paraph-nosotros p:nth-child(3){
+        font-size: 17px;
     }
 
     /* footer */
@@ -474,11 +496,11 @@ footer{
         width: 100% !important;
     }
     .img-video-nosotros img{
-        width: 200px;
+        width: 170px;
         height: 352px;
     }
     .img-video-nosotros video{
-        width: 200px;
+        width: 170px;
         height: 310px;
     }
     .img-video-nosotros{
@@ -494,7 +516,13 @@ footer{
     /* wsp */
 
     .whatsapp-container img{
-        width: 60px;
+        width: 55px;
+    }
+    .whatsapp-container i {
+        font-size: 35px
+    }
+    .whatsapp-container{
+        max-width: 20px;
     }
 }
 
@@ -509,7 +537,7 @@ footer{
     /* banner */
 
     .banner {
-        height: 20vh;
+        height: 24vh;
     }
 
     .banner-img {
@@ -533,7 +561,9 @@ footer{
         width: 250px;
         height: 440px;
     }
-
+    .icon-banner {
+        top: 23%;
+    }
 
     /* servicios */
 

@@ -346,3 +346,112 @@ header label{
         transition: none;
     }
 }
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px){    
+
+    /* banner */
+
+    .slider{
+        height: 30vh;
+    }
+
+    /* inf de proyecto */
+
+    .inf-project{
+        padding: 4rem 0 0;
+    }
+    .contain-concept{
+        width: 80%;
+    }
+    .file2 img{
+        height: 40vh;
+    }
+
+    .file3 img{
+        height: 40vh;
+    }
+    .contain-concept {
+        width: 40%;
+        margin: 6em 0;
+    }
+    .contain-concept {
+        width: 50%;
+    }
+
+}
+
+
+@media(max-width:991px){
+
+    /* header */
+
+    .banner-top, .boton button{
+        display: none;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    header.sticky {
+        padding: 1rem 2rem;
+    }
+    .logo-img img{
+        padding: 0;
+    }
+    header label{
+        display: block;
+    }
+    .lista-header{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: none;
+    }
+    .lista-header ul {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .lista-header ul li a{
+        color: black;
+    }
+
+    /* banner */
+
+    .slider{
+        height: 40vh;
+    }
+    .title-banner{
+        right: 8%;
+        width: 80%;
+    }
+    .slider .list{
+        text-align: center;
+    }
+    .inf-project{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inf-project-left, .picture{
+        width: 100%;
+    }
+    .contain-concept{
+        margin: 4em 0;
+        width: 80%;
+    }
+    .file2{
+        flex-direction: column;
+        padding: 0;
+    }
+    .file2 img, .file3 img{
+        width: 100%;
+        height: 28vh;
+        padding: 10px 0;
+    }
+    .contain-concept p{
+        font-size: 18px;
+    }
+}

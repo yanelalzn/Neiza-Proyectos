@@ -193,7 +193,7 @@ header label{
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    gap: 4rem;
+    /* gap: 4rem; */
     background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 78%) 100%), url(img/banner4.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -205,7 +205,7 @@ header label{
 .form{
     width: 38%;
     border: 2px solid black;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     padding: 20px 30px;
     background-color: white;
 }
@@ -217,10 +217,10 @@ header label{
 .contact-img{
     display: flex;
     align-items: center;
-    width: 38%;
-    background-color: #00000099;
+    width: 35%;
+    background-color: black;
     padding: 3rem 2rem;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 .contact-img img{
     width: 280px;
@@ -351,10 +351,11 @@ header label{
 
 .logo-redes-cont, .logo-redes-cont-down{
     border-radius: 100%;
-    padding: 12px;
+    padding: 9px 10px;
     background-color: black;
     transition: 0.9s;
     cursor: pointer;
+    border: 1px solid white;
 }
 
 .logo-redes-cont-down:hover{
@@ -514,12 +515,9 @@ footer{
         height: 30vh;
     }
     .banner{
-        height: 20vh;
+        height: 24vh;
     }
     /* contacto */
-    .contacto{
-        gap: 2rem;
-    }
 
     .contact-img video {
         width: 230px;
@@ -538,15 +536,30 @@ footer{
     .logo-img img{
         padding: 0;
     }
-    
+    .icon-banner{
+        top: 23%;
+    }
+
     /* footer */
 
     .list-footer {
-        width: 65%;
+        width: 70%;
+        }
+
+    .list-footer {
+        width: 70%;
     }
 
-    .footer-down {
-        padding: 2rem 0;
+    .logo-footer{
+        text-align: center;
+    }
+
+    .logo-footer p {
+        width: 100%;
+        text-align: center;
+    }
+    .logo-footer ul{
+        justify-content: center;
     }
 }
 
@@ -561,7 +574,9 @@ footer{
     }
     header{
         padding: 1rem 2rem;
-        padding: 0 1rem !important;
+    }
+    header.sticky {
+        padding: 1rem 2rem;
     }
     .logo-img img{
         padding: 0;
@@ -583,11 +598,17 @@ footer{
         align-items: center;
     }
 
+    .lista-header ul li a{
+        color: black;
+    }
+
     /* banner */
 
     .banner{
-        padding: 8rem 0 0 0.5rem;
+        padding: 8rem 0 0 0;
         align-items: center;
+        height: 35vh;
+        justify-content: center;
     }
 
     .title-banner p{
@@ -609,6 +630,13 @@ footer{
         width: inherit !important;
     }
 
+    .icon-banner{
+        top: 30%;
+    }
+    .banner .title-banner{
+        padding: 0;
+        margin: 0;
+    }
     
     /* Contacto */
 
@@ -637,7 +665,7 @@ footer{
         gap: 1rem;
     }
     .list-footer{
-        width: 100%;
+        display: none;
     }
 
     .footer-down {
@@ -652,11 +680,20 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
     }
     .logo-footer p{
-        width: 82%;
-        text-align: center;
-}
+        display: none;
+    }
 
+    /* wsp */
+
+    .whatsapp-container img{
+        width: 55px;
+    }
+    .whatsapp-container i {
+        font-size: 35px
+    }
+    .whatsapp-container{
+        max-width: 20px;
+    }
 }
