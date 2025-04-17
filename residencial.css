@@ -454,4 +454,15 @@ header label{
     .contain-concept p{
         font-size: 18px;
     }
+        /* wsp */
+
+        .whatsapp-container img{
+            width: 55px;
+        }
+        .whatsapp-container i {
+            font-size: 35px
+        }
+        .whatsapp-container{
+            max-width: 20px;
+        }
 }

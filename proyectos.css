@@ -686,6 +686,17 @@ footer{
         width: 82%;
         text-align: center;
     }
+        /* wsp */
+
+        .whatsapp-container img{
+            width: 55px;
+        }
+        .whatsapp-container i {
+            font-size: 35px
+        }
+        .whatsapp-container{
+            max-width: 20px;
+        }
 }
 
 @media screen and (min-width: 991px) and (max-width: 1300px){
