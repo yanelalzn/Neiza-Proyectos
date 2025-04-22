@@ -203,7 +203,7 @@ header label{
 }
 
 .form{
-    width: 38%;
+    width: 35%;
     border: 2px solid black;
     /* border-radius: 25px; */
     padding: 20px 30px;
@@ -221,16 +221,6 @@ header label{
     background-color: black;
     padding: 3rem 2rem;
     /* border-radius: 25px; */
-}
-.contact-img img{
-    width: 280px;
-    height: 500px;
-    object-fit: cover;
-}
-.contact-img video{
-    width: 280px;
-    height: 450px;
-    object-fit: cover;
 }
 
 .contacto form{
@@ -371,7 +361,7 @@ header label{
 }
 
 .icon-contacto-p2{
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
 }
 
 .redessociales-cont p{
@@ -383,10 +373,12 @@ header label{
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-
+.phone-button{
+    margin-bottom: 40px;
+}
 
 /* map */
 
@@ -696,4 +688,17 @@ footer{
     .whatsapp-container{
         max-width: 20px;
     }
+}
+
+
+/* Para Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

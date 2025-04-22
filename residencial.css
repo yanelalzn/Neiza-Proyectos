@@ -324,6 +324,35 @@ header label{
 }
 
 
+
+/* Wsp */
+
+.whatsapp-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    position: fixed;
+    bottom: 15px;
+    right: 60px;
+    z-index: 9999999;
+}
+.whatsapp-container img{
+    width: auto;
+    height: auto;
+    background: #36c62a;
+    border-radius: 100%;
+    padding: 8px;
+    border: solid 4px white;
+}
+
+.icono-whatsapp{
+    display: block;
+    margin: 10px;
+}
+
+
 /* scroll */
 
 .hidden {
