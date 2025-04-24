@@ -119,60 +119,11 @@ header label{
     background-image: url(img/banner4.jpg);
     background-size: 100% 100%;
 }
-.slider .buttons{
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-.slider .buttons button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff5;
-    color: #fff;
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-    cursor: pointer;
-}
-.slider .dots{
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-.slider .dots li{
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.slider .dots li.active{
-    width: 30px;
-}
 
 .title-banner{
     position: absolute;
     top: 50%;
     right: 35%;
-}
-
-.inf-banner{
-    position: absolute;
-    top: 80%;
-    right: 50%;
 }
 
 .icon-banner{
