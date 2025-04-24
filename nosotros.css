@@ -22,7 +22,6 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
-    background-attachment: fixed;
     object-fit: cover;
 }
 .contacto-up ul{
@@ -280,11 +279,11 @@ header label{
     height: auto;
     position: fixed;
     bottom: 15px;
-    right: 60px;
+    right: 45px;
     z-index: 9999999;
 }
 .whatsapp-container img{
-    width: auto;
+    width: 60px;
     height: auto;
     background: #36c62a;
     border-radius: 100%;
@@ -297,12 +296,6 @@ header label{
     margin: 10px;
 }
 
-.whatsapp-container i{
-    font-size: 3rem;
-    margin-left: 1.5rem;
-    background-color: white;
-}
-
 /* footer */
 
 footer{
@@ -313,7 +306,7 @@ footer{
 .footer-up{
     display: flex;
     justify-content: space-around;
-    padding: 3rem 0;
+    padding: 6rem 0;
 }
 
 .logo-footer img{

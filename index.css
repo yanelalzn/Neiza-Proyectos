@@ -579,8 +579,9 @@ input[type='checkbox']:checked ~ .inf-service-down{
 /* Clientes */
 
 .clientes-logos{
-    margin-top: 5rem;
+    padding: 4rem 0;
 }
+
 .cliente{
     display: flex;
     justify-content: center;
@@ -796,11 +797,11 @@ input[type='checkbox']:checked ~ .inf-service-down{
     height: auto;
     position: fixed;
     bottom: 15px;
-    right: 60px;
+    right: 45px;
     z-index: 9999999;
 }
 .whatsapp-container img{
-    width: auto;
+    width: 60px;
     height: auto;
     background: #36c62a;
     border-radius: 100%;
@@ -824,7 +825,7 @@ footer{
 .footer-up{
     display: flex;
     justify-content: space-around;
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .logo-footer img{
@@ -1052,7 +1053,7 @@ footer{
     /* Logos clientes */
 
     .clientes-logos {
-        margin-top: 2rem;
+        padding: 0;
     }
 
     /* Contacto */
