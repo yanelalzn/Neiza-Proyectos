@@ -10,47 +10,57 @@
     <title>Contacto</title>
 </head>
 <body>
-    <div class="banner-img" id="up">
-        <nav>
-            <header class="flex" id="Header">
-                <div class="logo-img">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
-                </div>
-                <input type="checkbox" id="menu" />
-                <div class="header-left flex">
-                    <div class="lista-header">
-                        <ul class="flex">
-                            <li class="line"><a href="index.html">Inicio</a></li>
-                            <li class="line"><a href="nosotros.html">Nosotros</a></li>
-                            <li class="line"><a href="proyectos.html">Proyectos</a></li>
-                            <li class="service-line"><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <label for="menu">
-                    <img src="img/menu.png" alt="" class="menu-icono">
-                </label>
-            </header>
-            <div class="banner">
-                <div class="title-banner"><p>Contacto</div>
+    <div class="slider">
+        <header class="flex" id="Header">
+            <div class="logo-img">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
-            <div class="icon-banner">
-                <i class='bx bx-chevron-down bx-fade-down' ></i>
+            <input type="checkbox" id="menu" />
+            <div class="header-left flex">
+                <div class="lista-header">
+                    <ul class="flex">
+                        <li class="line"><a href="index.html">Inicio</a></li>
+                        <li class="line"><a href="nosotros.html">Nosotros</a></li>
+                        <li class="line"><a href="proyectos.html">Proyectos</a></li>
+                        <li class="line"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+            <label for="menu">
+                <img src="img/menu.png" alt="" class="menu-icono">
+            </label>
+        </header>
+        <div class="list">
+            <div class="item">
+                <img src="img/banner4.jpg" alt=""></a>
+                <div class="title-banner">
+                    <p>Contacto</p>
+                </div>
+                <div class="icon-banner">
+                    <i class='bx bx-chevron-down bx-fade-down' ></i>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="contacto" id="contacto">
+        <div class="inf-contacto">
+            <div class="container-contacto">
+                <p>¿TIENES ALGUNA PREGUNTA?</p>
+                <p>Rellena tus datos y nos pondremos en contacto contigo, 
+                    o llamanos al número que aparece en continuación.
+                </p>
+                <p>+51 942 875 386</p>
+                <p>jhamesjack@zaneistudio.com</p>
+            </div>
+        </div>
         <div class="form">
             <h1>Envíanos un Mensaje</h1>
             <p class="paraph-contact">¡Te asesoramos sin compromiso! <br> Nos ponemos
                 en contacto en breve.</p>
                 <form action="formulario.php" method="post">
-                    <div class="name">
+                    <div class="input-large">
                         <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                    </div>
-                    <div class="name">
-                        <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
                     </div>
                     <div class="input-large">
                         <input type="number" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono"> 
@@ -58,73 +68,23 @@
                     <div class="input-large">
                         <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
                     </div>
-                    <div class="input-large">
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-                    </div>
-                    <button class="btn-form" type="submit" name="enviar_formulario" id="enviar">Enviar</button>         
+                    <button class="btn-form" type="submit" name="enviar_formulario" id="enviar">Enviar
+
+                    </button>         
                 </form>
-        </div>
-        <div class="contact-img">
-            <div class="icon-contacto">
-                <h2 style="margin: 15px 0;">Cotiza tu proyecto</h2>
-                <p class="icon-contacto-p2">Llame o envíe un formulario de contacto, estaremos encantados de ayudarle.</p>
-                <div class="icon-cont-inf">
-                    <div class="logo-redes-cont">
-                        <i class='bx bx-map'></i>
-                    </div>
-                    <div class="cont-text">
-                        <p>Dirección:</p>
-                        <p>051, Independencia 15332</p>
-                    </div>
-                </div>
-                <div class="icon-cont-inf">
-                    <div class="logo-redes-cont">
-                        <i class='bx bxl-gmail'></i>
-                    </div>
-                    <div class="cont-text">
-                        <p>Correo</p>
-                        <p>jhamesjack@zaneistudio.com</p>
-                    </div>
-                </div>
-                <div class="icon-cont-inf phone-button">
-                    <div class="logo-redes-cont">
-                        <i class='bx bx-phone' ></i>
-                    </div>
-                    <div class="cont-text">
-                        <p>Teléfono</p>
-                        <p>942 875 386</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="redessociales-cont">
-                    <p>Redes sociales</p>
-                    <div class="icon-cont-inf-down">
-                        <div class="logo-redes-cont-down"> 
-                            <i class='bx bxl-facebook-square' ></i>
-                        </div>
-                        <div class="logo-redes-cont-down"> 
-                            <i class='bx bxl-instagram' ></i>
-                        </div>
-                        <div class="logo-redes-cont-down">
-                            <i class='bx bxl-linkedin-square' ></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
         </div>
     </div>
 
     <footer>
         <div class="footer-up">
             <div class="logo-footer">
-                <img src="img/logo-footer.png" alt="">
+                <img src="img/logo.png" alt="">
                 <p> Zanei Proyectos es una empresa integrada por profesionales 
                     especializados en Arquitectura, Diseño y Web</p>
                 <ul>
-                    <li><i class='bx bxl-facebook' style='color:#ffffff'></i></li>
-                    <li><i class='bx bxl-instagram' style='color:#ffffff'></i></li>
-                    <li><i class='bx bxl-linkedin' style='color:#ffffff' ></i></li>
+                    <li><i class='bx bxl-facebook'></i></li>
+                    <li><i class='bx bxl-instagram'></i></li>
+                    <li><i class='bx bxl-linkedin'></i></li>
                 </ul>
             </div>
             <div class="list-footer flex">

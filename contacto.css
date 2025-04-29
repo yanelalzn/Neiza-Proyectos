@@ -152,32 +152,67 @@ header label{
     display: initial;
 }
 
-/* Banner */
-.banner{
+/* slider */
+
+.slider{
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
     display: flex;
-    justify-content: flex-start;
-    align-items: end;
-    height: 85vh;
-    cursor: context-menu;
+    transition: 1s;
+}
+.slider .list img{
+    width: 2000px;
+    max-width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
-.banner .title-banner{
-    font-size: 40px;
-    color: white;
-    font-weight: 200;
-    padding: 15px 30px;
-    margin: 0 7rem;
-}
-
-
-.title-banner p{
-    text-transform: uppercase;
+.title-banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
 }
 
 .icon-banner{
+    width: 100%;
+    height: 80%;
     position: absolute;
-    top: 80%;
-    right: 45%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    top: 0;
+    right: 0;
+}
+
+.title-banner p{
+    font-size: 30px;
+    color: #ffff;
+    text-transform: capitalize;
+}
+
+.inf-banner p{
+    font-size: 10px;
+    color: #ffff;
+    text-transform: capitalize;
+    width: 30%;
 }
 
 .icon-banner i{
@@ -185,49 +220,63 @@ header label{
     color: white;
 }
 
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
 /* Conctacto */
 
 .contacto{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    flex-direction: row-reverse;
-    /* gap: 4rem; */
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0 0 0 / 78%) 100%), url(img/banner4.jpg);
-    background-size: 100% 100%;
+    gap: 4rem;
+    background-image: url(img/contacto-fondo.png);
+    background-size: 100% 150%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    object-fit: cover;
     padding: 6rem 0;
     scroll-margin-top: 2ex;
 }
 
 .form{
-    width: 35%;
-    border: 2px solid black;
-    /* border-radius: 25px; */
-    padding: 20px 30px;
+    width: 33%;
+    border-radius: 25px;
+    padding: 55px 30px;
     background-color: white;
 }
 
-.icon-contacto{
+.inf-contacto{
+    width: 45%;
+}
+
+.container-contacto{
+    text-align: left;
+    padding-top: 60px;
+}
+.container-contacto p{
     color: white;
+    padding-bottom: 20px;
+}
+.container-contacto p:nth-child(1){
+    font-size: 45px;
+    font-weight: 500;
+    width: 80%;
+}
+.container-contacto p:nth-child(2){
+    font-size: 16px;
+    width: 60%;
+    padding-bottom: 50px;
+}
+.container-contacto p:nth-child(3),
+.container-contacto p:nth-child(4){
+    font-size: 30px;
 }
 
-.contact-img{
-    display: flex;
-    align-items: center;
-    width: 35%;
-    background-color: black;
-    padding: 3rem 2rem;
-    /* border-radius: 25px; */
-}
-
-.contacto form{
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-}
 
 /* form */
 
@@ -236,25 +285,21 @@ header label{
     font-weight: 500;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
     text-align: center;
-    padding: 10px 0;
+    margin-bottom: 22px;
 }
-
 
 .contacto form{
     display: flex;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
-
 
 .contacto .name, textarea{
     font-size: 16px;
     margin-bottom: 10px;
     line-height: 30px;
 
-}
-.name{
-    width: calc(50%);
 }
 
 .name input{
@@ -271,15 +316,11 @@ header label{
     font-weight: 500;
 }
 
-.contacto input:first-child{
-    margin-right: 16px;
-}
-
-
 .contacto .input-large{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 16px;
     line-height: 30px;
 
@@ -288,8 +329,10 @@ header label{
     border-radius: 22px;
     border: none;
     background-color: #e1e1e1;
-    width: 98%;
+    width: 85%;
+    height: 55px;
     padding: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contacto textarea{
@@ -308,6 +351,7 @@ header label{
     color: black;
     text-align: center;
     margin-bottom: 22px;
+    font-size: 16px;
 }
 .contacto input:focus, .form-contacto textarea:focus{
 	border: 2px solid black;
@@ -316,9 +360,8 @@ header label{
 }
 
 .btn-form{
-	height: 45px;
-	line-height: 45px;
-	width: 98%;
+	height: 55px;
+	width: 85%;
 	background: black;
 	color: #fff;
 	border: none;
@@ -329,68 +372,9 @@ header label{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 17px;
 }
 
-
-.icon-cont-inf{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 1rem;
-}
-
-.logo-redes-cont, .logo-redes-cont-down{
-    border-radius: 100%;
-    padding: 9px 10px;
-    background-color: black;
-    transition: 0.9s;
-    cursor: pointer;
-    border: 1px solid white;
-}
-
-.logo-redes-cont-down:hover{
-    background-color: rgb(62, 62, 62);
-}
-
-.logo-redes-cont i{
-    font-size: 20px;
-}
-
-.logo-redes-cont-down i{
-    font-size: 25px;
-}
-
-.icon-contacto-p2{
-    margin-bottom: 30px;
-}
-
-.redessociales-cont p{
-    padding: 1rem;
-}
-
-
-.icon-cont-inf-down{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 2rem;
-}
-
-.phone-button{
-    margin-bottom: 40px;
-}
-
-/* map */
-
-.map-contacto{
-    text-align: center;
-}
-.map-contacto iframe{
-    height: 60vh !important;
-    border-radius: 30px;
-    width: 95%;
-    margin: 3rem 0;
-}
 
 /* Wsp */
 
@@ -424,7 +408,7 @@ header label{
 
 footer{
     padding: 0 2rem;
-    background-color: black;
+    background-color: #F0F0F0
 }
 
 .footer-up{
@@ -436,13 +420,15 @@ footer{
 .logo-footer img{
     width: 200px;
     height: 80px;
+    transition-delay: 200ms;
 }
 
 .logo-footer p{
-    color: white;
+    color: black;
     width: 40%;
     text-align: left;
     font-size: 14px;
+    transition-delay: 300ms;
 }
 
 .list-menu-footer p{
@@ -451,7 +437,7 @@ footer{
 }
 
 .list-menu-footer li, .list-menu-footer p{
-    color: white;
+    color: black;
     padding-bottom: 10px;
 }
 
@@ -461,12 +447,14 @@ footer{
 }
 
 .footer-down{
-    padding: 2rem 3rem;
-    border-top: 2px solid white;
+
+    padding: 2rem 0;
+    margin: 0 3rem;
+    border-top: 1px solid #D2CFCF;
 }
 
 .footer-down p{
-    color: white;
+    color: black;
 }
 
 .list-footer{
@@ -476,6 +464,7 @@ footer{
 .logo-footer ul{
     display: flex;
     margin: 1rem 0;
+    transition-delay: 400ms;
 }
 .logo-footer ul li{
     margin-right: 8px;
@@ -484,27 +473,31 @@ footer{
 .logo-footer ul li i:hover{
     background-color: #343434;
     border: 1px solid #343434;
+    color: white;
 }
 .logo-footer ul li i{
     border-radius: 100%;
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 6px;
     font-size: 20px;
+    transition: 0.8s;
+    cursor: pointer;
+    color: black;
     transition: 0.8s;
 }
 
 
+@media screen and (min-width: 1000px) and (max-width: 1300px){
 
-@media screen and (min-width: 991px) and (max-width: 1300px){
-
-    /* banner */
-    .banner-img{
+    .slider {
         height: 30vh;
     }
-    .banner{
-        height: 24vh;
-    }
+
+
     /* contacto */
+    .contacto{
+        gap: 2rem;
+    }
 
     .contact-img video {
         width: 230px;
@@ -514,27 +507,23 @@ footer{
         width: 230px;
         height: 460px;
     }
-    .contact-img{
-        width: 40%;
+    .container-contacto p:nth-child(3), 
+    .container-contacto p:nth-child(4) {
+        font-size: 30px;
     }
-    .form {
+    .container-contacto p:nth-child(1){
+        width: 85%;
+    }
+
+    .form{
         width: 45%;
     }
-    .logo-img img{
-        padding: 0;
-    }
-    .icon-banner{
-        top: 23%;
-    }
+
 
     /* footer */
 
     .list-footer {
-        width: 70%;
-        }
-
-    .list-footer {
-        width: 70%;
+        width: 50%;
     }
 
     .logo-footer{
@@ -542,8 +531,58 @@ footer{
     }
 
     .logo-footer p {
+        display: none;
+    }
+    .logo-footer ul{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 715px) and (max-width: 1000px){
+    .slider {
+        height: 30vh;
+    }
+    /* Contacto */
+
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0 6rem;
+    }
+    .form, .contact-img{
+        width: 70%;
+        padding: 90px 30px;
+    }
+
+    .input-large input, .btn-form{
         width: 100%;
+    }
+    .inf-contacto {
+        width: 85%;
+    }
+    .container-contacto p:nth-child(2){
+        width: 90%;
+    }
+    .container-contacto p:nth-child(3), 
+    .container-contacto p:nth-child(4) {
+        font-size: 20px;
+    }
+    /* footer */
+
+    .list-footer {
+        width: 70%;
+        }
+
+    .list-footer {
+        width: 50%;
+    }
+
+    .logo-footer{
         text-align: center;
+    }
+
+    .logo-footer p {
+        display: none;
     }
     .logo-footer ul{
         justify-content: center;
@@ -551,9 +590,7 @@ footer{
 }
 
 
-
-@media(max-width:991px){
-
+@media(max-width:715px){
     /* header */
 
     .banner-top, .boton button{
@@ -591,83 +628,97 @@ footer{
 
     /* banner */
 
-    .banner{
-        padding: 8rem 0 0 0;
-        align-items: center;
-        height: 35vh;
-        justify-content: center;
-    }
-
-    .title-banner p{
-        text-align: center;
-    }
-    .banner-img{
+    .slider{
         height: 40vh;
     }
-    .title-banner p{
-        font-size: 30px;
+    .title-banner{
+        right: 8%;
+        width: 80%;
     }
-
-    .galleria-portafolio figure, .galleria-portafolio .width-bewtw {
-        width: 95%;
-        height: 45vh;
+    .slider .list{
+        text-align: center;
     }
-
-    .text-service{
-        width: inherit !important;
+    .inf-project{
+        flex-direction: column;
+        gap: 20px;
+        padding: 4rem 0 0 0;
     }
-
-    .icon-banner{
-        top: 30%;
+    .inf-project-left, .picture{
+        width: 100%;
     }
-    .banner .title-banner{
+    .contain-concept{
+        margin: 4em 0;
+        width: 80%;
+    }
+    .concept-project{
+        margin: 20px 0;
+    }
+    .file2{
+        flex-direction: column;
         padding: 0;
-        margin: 0;
+    }
+    .file2 img, .file3 img{
+        width: 100%;
+        height: 28vh;
+        padding: 10px 0;
+    }
+    .contain-concept p{
+        font-size: 18px;
     }
     
     /* Contacto */
 
     .contacto{
         flex-direction: column;
+        align-items: center;
+        padding: 2rem 0 6rem;
     }
     .form, .contact-img{
         width: 93%;
     }
-    .contact-img img{
-        width: 50%;
-        height: 352px;
+
+    .input-large input, .btn-form{
+        width: 100%;
     }
-    .contact-img video{
-        width: 50%;
-        height: 310px;
+    .inf-contacto {
+        width: 85%;
     }
-    .form{
-        padding: 20px 20px;
+    .container-contacto p:nth-child(2){
+        width: 90%;
     }
+    .container-contacto p:nth-child(3), 
+    .container-contacto p:nth-child(4) {
+        font-size: 20px;
+    }
+
 
     /* footer */
 
+    footer{
+        padding: 0;
+    }
+    
     .footer-up{
         flex-direction: column;
-        gap: 1rem;
+        padding: 3rem 0;
+    }
+    .footer-down{
+        padding: 2rem 0;
+        margin: 0 1rem;
     }
     .list-footer{
         display: none;
     }
-
-    .footer-down {
-        padding: 2rem 0;
-    }
-
     .footer-down p{
         text-align: center;
     }
-        
+
     .logo-footer{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    
     .logo-footer p{
         display: none;
     }
@@ -681,7 +732,7 @@ footer{
         font-size: 35px
     }
     .whatsapp-container{
-        max-width: 20px;
+        max-width: 35px;
     }
 }
 
