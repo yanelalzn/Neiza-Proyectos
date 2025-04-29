@@ -197,6 +197,8 @@ header label{
 /* Nosotros */
 
 .nosotros{
+    display: flex;
+    flex-direction: column;
     padding: 6rem 0;
     background-color: #F0F0F0;
     scroll-margin-top: 10ex;
@@ -216,25 +218,21 @@ header label{
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    margin-bottom: 3rem;
+    margin: 2rem 0;
 }
 
-.img-video-nosotros{
+.img-nosotros{
     display: flex;
     justify-content: end;
     align-items: center;
     width: 50%;
 }
-.img-video-nosotros img{
-    width: 306px;
-    height: 512px;
-    object-fit: cover;
-}
-.img-video-nosotros video{
-    width: 306px;
+.img-nosotros img{
+    width: 80%;
     height: 470px;
     object-fit: cover;
 }
+
 .paraph-nosotros{
     width: 40%;
 }
@@ -393,9 +391,6 @@ input[type='checkbox']:checked ~ .inf-service-down{
     text-transform: capitalize;
     padding: 0 5px 10px 5px;
 }
-/* input[type='checkbox']{
-    display: none;
-} */
 
 .button-service button{
     background-color: black;
@@ -481,21 +476,24 @@ input[type='checkbox']:checked ~ .inf-service-down{
 }
 
 .galeria-img{
+    width:95%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
-.galeria-img a{
-    width: 32%;
-}
 .galeria-card{
-    width: 100%;
-    height: 400px;
+    width: 30%;
+    height: 350px;
     display: block;
     position: relative;
     overflow: hidden;
+}
+.galeria-prue{
+    width: 100%;
+    height: 100%;
+
 
 }
 .galeria-card img{
@@ -526,13 +524,13 @@ input[type='checkbox']:checked ~ .inf-service-down{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     opacity: 0;
     transition: all .6s ease-in-out;
 }
@@ -822,14 +820,16 @@ input[type='checkbox']:checked ~ .inf-service-down{
 /* footer */
 
 footer{
-    padding: 0 2rem;
-    background-color: #F0F0F0
+    padding: 0 1rem;
+    background-color: #F0F0F0;
+    padding: 2rem 5rem;
 }
 
 .footer-up{
     display: flex;
-    justify-content: space-around;
-    padding: 6rem 0;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem 0
 }
 
 .logo-footer img{
@@ -837,60 +837,34 @@ footer{
     height: 80px;
     transition-delay: 200ms;
 }
-
-.logo-footer p{
-    color: black;
+.footer-down {
     width: 40%;
-    text-align: left;
-    font-size: 14px;
-    transition-delay: 300ms;
 }
-
-.list-menu-footer p{
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.list-menu-footer li, .list-menu-footer p{
-    color: black;
-    padding-bottom: 10px;
-}
-
-.list-menu-footer li:hover{
-    transform: scaleY(1.1);
-    cursor: pointer;
-}
-
-.footer-down{
-
-    padding: 2rem 0;
-    margin: 0 3rem;
-    border-top: 1px solid #D2CFCF;
-}
-
 .footer-down p{
     color: black;
 }
 
-.list-footer{
-    width: 30%;
-    gap: 2rem;
+.list-footer, .logo-footer{
+    width: 40%;
 }
-.logo-footer ul{
+.list-footer{
+    justify-content: end;
+}
+.list-footer ul{
     display: flex;
     margin: 1rem 0;
     transition-delay: 400ms;
 }
-.logo-footer ul li{
+.list-footer ul li{
     margin-right: 8px;
     transition: 0.8s;
 }
-.logo-footer ul li i:hover{
+.list-footer ul li i:hover{
     background-color: #343434;
     border: 1px solid #343434;
     color: white;
 }
-.logo-footer ul li i{
+.list-footer ul li i{
     border-radius: 100%;
     border: 1px solid black;
     padding: 6px;
@@ -966,17 +940,7 @@ footer{
         text-align: center;
         width: 100% !important;
     }
-    .img-video-nosotros img{
-        width: 200px;
-        height: 352px;
-    }
-    .img-video-nosotros video{
-        width: 200px;
-        height: 310px;
-    }
-    .img-video-nosotros{
-        justify-content: center;
-    }
+
     .nosotros{
         padding: 3rem 0;
     }
@@ -991,6 +955,13 @@ footer{
     }
     .nosotros .title-nosotros h1, .service .title-service h1, .clientes-logos h1 {
         font-size: 30px;
+    }
+    .img-nosotros{
+        justify-content: center;
+        width: 100%;
+    }
+    .img-nosotros img {
+        height: 370px;
     }
     
     /* servicios */
@@ -1022,6 +993,14 @@ footer{
     .projects .title-projects h1{
         font-size: 25px;
     }
+    .galeria-img{
+        gap: 0;
+    }
+    .galeria-card{
+        margin-bottom: 6px;
+        width: 100%;
+    }
+
 
     /* Logos clientes */
 
@@ -1063,14 +1042,12 @@ footer{
     
     .footer-up{
         flex-direction: column;
-        padding: 3rem 0;
+        padding: 2rem 0;
+        align-items: center;
     }
     .footer-down{
         padding: 2rem 0;
         margin: 0 1rem;
-    }
-    .list-footer{
-        display: none;
     }
     .footer-down p{
         text-align: center;
@@ -1082,8 +1059,16 @@ footer{
         align-items: center;
     }
     
-    .logo-footer p{
-        display: none;
+    .list-footer, .logo-footer{
+        width: 100%;
+    }
+    .list-footer {
+        justify-content: center;
+    }
+    .footer-down {
+        width: 100%;
+        padding: 2rem 0;
+        margin: 0;
     }
     
     /* wsp */
@@ -1102,6 +1087,10 @@ footer{
 @media screen and (min-width: 715px) and (max-width: 1000px){
 
     /* banner */
+
+    .logo-img img{
+        padding: 0;
+    }
 
     .slider {
         height: 55vh;
@@ -1153,9 +1142,17 @@ footer{
 
     /* proyectos */
 
+    .galeria-img{
+        width: 100%;
+    }
+
     .list-projects ul {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .galeria-card{
+        width: 31%;
+        height: 290px;
     }
 
     /* Contacto */
@@ -1186,22 +1183,19 @@ footer{
     }
 
     /* footer */
-    
+
     .list-footer {
         width: 50%;
     }
 
-    .logo-footer{
-        text-align: center;
-    }
-
     .logo-footer p {
         display: none;
-
     }
     .logo-footer ul{
         justify-content: center;
-        gap: 1rem;
+    }
+    .footer-down {
+        width: 50%;
     }
 
 }
@@ -1265,6 +1259,15 @@ footer{
         margin: 3rem 0;
     }
 
+    /* proyecto */
+
+    .galeria-img{
+        width: 100%;
+    }
+    .galeria-card{
+        width: 32%;
+    }
+
     /* contacto */
     .contacto{
         gap: 2rem;
@@ -1298,19 +1301,17 @@ footer{
         width: 50%;
     }
 
-    .logo-footer{
-        text-align: center;
-    }
-
-    .logo-footer p {
-        display: none;
-
-    }
     .logo-footer ul{
         justify-content: center;
         gap: 1rem;
     }
 
+}
+
+@media (min-width: 1600px){
+    .galeria-img {
+        width: 70%;
+    }
 }
 
 
@@ -1319,9 +1320,4 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-/* Para Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
 }

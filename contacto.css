@@ -157,7 +157,7 @@ header label{
 .slider{
     width: 100%;
     max-width: 100vw;
-    height: 100vh;
+    height: 60vh;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -188,6 +188,7 @@ header label{
     align-items: center;
     top: 0;
     right: 0;
+    background: #092a4663;
 }
 
 .icon-banner{
@@ -407,14 +408,16 @@ header label{
 /* footer */
 
 footer{
-    padding: 0 2rem;
-    background-color: #F0F0F0
+    padding: 0 1rem;
+    background-color: #F0F0F0;
+    padding: 2rem 5rem;
 }
 
 .footer-up{
     display: flex;
-    justify-content: space-around;
-    padding: 6rem 0;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem 0
 }
 
 .logo-footer img{
@@ -422,60 +425,34 @@ footer{
     height: 80px;
     transition-delay: 200ms;
 }
-
-.logo-footer p{
-    color: black;
+.footer-down {
     width: 40%;
-    text-align: left;
-    font-size: 14px;
-    transition-delay: 300ms;
 }
-
-.list-menu-footer p{
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.list-menu-footer li, .list-menu-footer p{
-    color: black;
-    padding-bottom: 10px;
-}
-
-.list-menu-footer li:hover{
-    transform: scaleY(1.1);
-    cursor: pointer;
-}
-
-.footer-down{
-
-    padding: 2rem 0;
-    margin: 0 3rem;
-    border-top: 1px solid #D2CFCF;
-}
-
 .footer-down p{
     color: black;
 }
 
-.list-footer{
-    width: 30%;
-    gap: 2rem;
+.list-footer, .logo-footer{
+    width: 40%;
 }
-.logo-footer ul{
+.list-footer{
+    justify-content: end;
+}
+.list-footer ul{
     display: flex;
     margin: 1rem 0;
     transition-delay: 400ms;
 }
-.logo-footer ul li{
+.list-footer ul li{
     margin-right: 8px;
     transition: 0.8s;
 }
-.logo-footer ul li i:hover{
+.list-footer ul li i:hover{
     background-color: #343434;
     border: 1px solid #343434;
     color: white;
 }
-.logo-footer ul li i{
+.list-footer ul li i{
     border-radius: 100%;
     border: 1px solid black;
     padding: 6px;
@@ -521,20 +498,14 @@ footer{
 
 
     /* footer */
-
-    .list-footer {
+    
+    .footer-down {
         width: 50%;
     }
 
-    .logo-footer{
-        text-align: center;
-    }
-
-    .logo-footer p {
-        display: none;
-    }
     .logo-footer ul{
         justify-content: center;
+        gap: 1rem;
     }
 }
 
@@ -573,17 +544,10 @@ footer{
         width: 70%;
         }
 
-    .list-footer {
+    .footer-down {
         width: 50%;
     }
 
-    .logo-footer{
-        text-align: center;
-    }
-
-    .logo-footer p {
-        display: none;
-    }
     .logo-footer ul{
         justify-content: center;
     }
@@ -692,22 +656,20 @@ footer{
     }
 
 
-    /* footer */
+     /* footer */
 
-    footer{
+     footer{
         padding: 0;
     }
     
     .footer-up{
         flex-direction: column;
-        padding: 3rem 0;
+        padding: 2rem 0;
+        align-items: center;
     }
     .footer-down{
         padding: 2rem 0;
         margin: 0 1rem;
-    }
-    .list-footer{
-        display: none;
     }
     .footer-down p{
         text-align: center;
@@ -719,8 +681,16 @@ footer{
         align-items: center;
     }
     
-    .logo-footer p{
-        display: none;
+    .list-footer, .logo-footer{
+        width: 100%;
+    }
+    .list-footer {
+        justify-content: center;
+    }
+    .footer-down {
+        width: 100%;
+        padding: 2rem 0;
+        margin: 0;
     }
 
     /* wsp */
