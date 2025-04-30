@@ -206,10 +206,13 @@ header label{
 .nosotros .title-nosotros h1, .service .title-service h1, .clientes-logos h1{
     text-align: center;
     font-weight: 500;
-    margin: 6rem 0;
     font-family: "Raleway", serif;
     text-transform: uppercase;
     font-size: 40px;
+}
+
+.nosotros .title-nosotros h1, .service .title-service, .clientes-logos h1{
+    margin: 5rem 0;
 }
 
 .inf-nosotros{
@@ -259,154 +262,124 @@ header label{
 }
 
 
-/* servicio 1 */
-
-.servicio{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-.servicio-first{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-}
-
-.servicio-first img{
-    width: 85%;
-    height: 45vh;
-    transform: translate(6%);
-    margin-bottom: 10px;
-}
-
-.servicio-first h4{
-    transform: translate(6%);
-    width: 90%;
-    color: black;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.servicio-first p{
-    width: 90%;
-    transform: translate(6%);
-    color: black;
-    font-size: 16px;
-}
-
-/* Servicios 2 */
-
-.inf-service-up{
-    font-size: 12px;
-    width: 70%;
-    text-transform: capitalize !important;
-}
-
-
 /* servicios */
 
 .service{
     scroll-margin-top: 6ex;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
     padding: 0 0 3rem 0;
 }
-
-.inf-service{
+.servicio{
     display: flex;
     justify-content: center;
-    gap: 2px;
-    margin: 10px;
-    border: 1px solid black;
-    width: fit-content;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.img-service{
-    width: 700px;
-    height: 380px;
-    background-image: url(img/service1.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.title-service p{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    padding: 30px 0 0 0;
+    width: 60%;
+    margin: auto;
 
 }
-.img-service-2{
-    width: 700px;
-    height: 380px;
-    background-image: url(img/service2.png);
-    background-size: 100% 100%;
+
+.service-card{
+    width: calc(32% - 1rem);
+    height: 400px;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
-.img-service-3{
-    width: 700px;
-    height: 380px;
-    background-image: url(img/service3.png);
-    background-size: 100% 100%;
+.service-prue{
+    width: 100%;
+    height: 100%;
+}
+.service-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.text-service{
+.service-card .service-overlay{
+    background-color: black;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.card-inf-ser{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-transform: uppercase;
-    width: 400px;
-    text-align: center;
-    height: 380px;
+    width: 100%;
+    position: absolute;
+    top: calc(-50%);
+    padding: 45px 50px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 50%);
+    transition: all .6s ease-in-out;
+    height: 100%;
+    background: #343e4652;
 }
 
-.text-service input{
-    display: none;
-}
-.text-service label{
-    cursor: pointer;
-}
-.text-service Label:hover i{
-    font-weight: 600;
-}
-.text-service Label:hover{
-    font-weight: 600;
+.service-card:hover .card-inf-ser{
+    opacity: 1;
 }
 
-.text-service label, .text-service button{
-    padding: 10px 0;
+.service-card:hover .service-overlay{
+    opacity: 1;
 }
 
-.text-service h1{
-    font-weight: 300;
-    font-size: 22px;
-    width: 90%;
+.card-inf-ser button, .card-inf-ser p{
+    margin: 8px 0;
 }
 
-.text-service .inf-service-down{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-input[type='checkbox']:checked ~ .inf-service-down{
-    max-height: 600px;
-    padding: 0 5px 10px 5px;
-}
-.inf-service-down p{
-    text-transform: capitalize;
-    padding: 0 5px 10px 5px;
-}
-
-.button-service button{
-    background-color: black;
+.card-inf-ser h4{
     color: white;
-    padding: 10px 27px;
-    font-size: 15px;
-    border: none;
-    border-radius: 20px;
+    padding: 10px 0;
+    cursor: pointer;
     text-transform: uppercase;
-    transition: 0.8s;
+    height: 50px;
 }
-.button-service button:hover{
-    transform: scale(1.05);
+
+.card-inf-ser p{
+    color: white;
+    line-height: 23px;
+    height: 140px;
+    font-size: 15px;
+    width: 85%;
 }
-.flex-reverse{
+
+.card-inf-ser button{
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
+
+.card-inf-ser i{
+    font-size: 23px;
+}
+
 
 /* Proyectos */
 .projects{
@@ -443,6 +416,7 @@ input[type='checkbox']:checked ~ .inf-service-down{
     transition: all 0.3s ease;
     font-size: 18px;
 }
+
 
 /* Galeria */
 
@@ -491,8 +465,6 @@ input[type='checkbox']:checked ~ .inf-service-down{
 .galeria-prue{
     width: 100%;
     height: 100%;
-
-
 }
 .galeria-card img{
     width: 100%;
@@ -946,9 +918,16 @@ footer{
     .paraph-nosotros p:nth-child(3){
         font-size: 17px;
     }
+    .nosotros .title-nosotros h1, .service .title-service{
+        margin: 4rem 0;
+
+    }
     .nosotros .title-nosotros h1, .service .title-service h1{
         font-size: 30px;
-        margin: 4rem 0;
+    }
+    .title-service p{
+        width: 87%;
+        text-align: justify;
     }
 
     .clientes-logos{
@@ -973,12 +952,13 @@ footer{
     .servicio{
         flex-direction: column;
     }
-    .servicio-first{
-        width: 100%;
+    .service-card{
+        width: calc(90%);
+        margin: auto;
     }
-    .servicio-first img{
-        width: 90%;
-    }
+
+
+    
 
     /* proyectos */
     .list-projects ul{
@@ -1123,17 +1103,14 @@ footer{
     .servicio{
         flex-wrap: wrap;
     }
-    .servicio-first {
-        width: 45%;
-    }    
 
-    .servicio-first img, .servicio-first h4, .servicio-first p{
-        transform: translate(1%);
+    .service-card{
+        width: calc(45% - 0.3rem);
+    }    
+    .title-service p{
+        width: 87%;
+        text-align: justify;
     }
-    .servicio-first img {
-        width: 100%;
-        height: 35vh;
-    }        
 
     /* proyectos */
 
@@ -1243,20 +1220,12 @@ footer{
 
     /* servicios */
 
-    .servicio{
-        justify-content: space-around;
-        gap: 0;
-    }
-    .servicio-first{
-        width: 20%;
-    }
-
-    .servicio-first img{
-        width: 90%;
-        height: 20vh;
-    }
-    .service{
-        margin: 3rem 0;
+    .service-card{
+        width: calc(40% - 0.3rem);
+    }  
+    .title-service p{
+        width: 87%;
+        text-align: justify;
     }
 
     /* proyecto */
